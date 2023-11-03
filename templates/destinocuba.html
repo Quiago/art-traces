@@ -11,10 +11,10 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
 
         <title> Art Traces | Cuba </title>
     </head>
@@ -273,6 +273,6 @@
         <script src="/assets/js/mixitup.min.js"></script>
 
         <!--=============== DESTINOS JS ===============-->
-        <script src="./assets/js/destinos.js"></script>
+        <script src="{{url_for('assets', path='/js/destinos.js')}}"></script>
     </body>
 </html>

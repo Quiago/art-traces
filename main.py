@@ -26,9 +26,19 @@ async def root(request: Request):
 async def root(request: Request):
     return templates.TemplateResponse("destinomexico.html", {"request": request})
 
-@app.get("/blogs", tags=["blogs"])
-async def root(request: Request):
-    return templates.TemplateResponse("blog.html", {"request": request})
+@app.get("/blogs/{id_blog}", tags=["blogs"])
+async def root(request: Request, id_blog:str):
+
+
+    h1 = "Este blog es sobre Mexico y sus tallas interesantes quiero ver si saleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    h2 = "Este es un blog sobre Cuba y sus tallas interseantes quiero ver si funcionaaaaaaaaaaaaaaaa"
+    content = ""
+    if id_blog == "1":
+        content = h1
+    if id_blog == "2":
+        content = h2
+    print(content)
+    return templates.TemplateResponse("blog.html", {"request": request, "content": content})
 
 @app.post("/sendform", tags=["inicio"])
 async def form(name: str = Form(min_length=1, max_length=100), age: int = Form(ge=0, le=100), 
