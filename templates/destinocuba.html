@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="/assets/img/bxs-plane.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="https://i.postimg.cc/jSzLp3VJ/Art-17.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,26 +17,59 @@
         <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
 
         <title> Art Traces | Cuba </title>
+
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Destino Cuba</a>
+                <div class="nav__logo">
+                    <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                    <div class="nav__logo_text">ART - TRACES</div>
+                </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="/" class="nav__link active-link">
-                                Volver a Inicio
+                            <a href="/" class="nav__link ">
+                                INICIO
                             </a>
                         </li>
 
+                        <li class="nav__item">
+                            <a href="/destinocuba" class="nav__link active-link">
+                                DESTINO CUBA
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/destinomexico" class="nav__link">
+                                DESTINO YUCATÁN
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/indexgaleria" class="nav__link">
+                                GALERÍA
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/contacto" class="nav__link">
+                                TRIP REQUEST
+                            </a>
+                        </li>
                     </ul>
+                    <br><br><br><br>
+                    <a href="/destinocubaenglish" class="button">
+                        English
+                    </a>
 
                     <i class="bx bx-x nav__close" id="nav-close"></i>
                 </div>
 
+                
+                
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
@@ -52,10 +85,10 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__data-subtitle">Disfrute</span>
-                        <h1 class="home__data-title">De la Mas <br> Hermosa <b>Isla <br> Del Caribe</b></h1>
-                        <a href="#contact" class="home__button button">Contáctenos</a>
-
+                        <span class="home__data-subtitle">Disfruta</span>
+                        <h1 class="home__data-title">De la <br> Mas <b>Hermosa <br> Isla del Caribe</b></h1>
+                        <a href="/contacto" class="home__button button">Contáctenos</a>
+                        <a href="#itinerarios" class="home__button button">Ejemplo de Itinerarios</a>
                     </div>
 
                     <div class="home__social">
@@ -72,207 +105,233 @@
                 </div>
             </section>
 
-            <!--=============== EXPERIENCIA 1 ===============-->
-
+            <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                <span class="section__subtitle">Disfruta de las </span>
-                <h2 class="section__title">Experiencias que Ofrecemos</h2>
+                <span class="section__subtitle">Algunos Datos</span>
+                <h2 class="section__title">Sobre Cuba</h2>
 
                 <div class="about__container container grid">
-                    <div class="wrapper">
-                        <i class='bx bx-left-arrow-alt button' id="prev"></i>
-                        <div class="image-container">
-                          <div class="carousel">
-                            <img src="https://i.postimg.cc/nchrXbsP/gallery-img-6.jpg" alt="" />
-                            <img src="https://i.postimg.cc/gjtRxH7T/gallery-img-2.jpg" alt="" />
-                            <img src="https://i.postimg.cc/g0bhLJMm/gallery-img-4.jpg" alt="" />
-                            <img src="https://i.postimg.cc/HkdcTKjk/gallery-img-8.jpg" alt="" />
-                            <img src="https://i.postimg.cc/nchrXbsP/gallery-img-6.jpg" alt="" />
-                            <img src="https://i.postimg.cc/gjtRxH7T/gallery-img-2.jpg" alt="" />
-                            <img src="https://i.postimg.cc/g0bhLJMm/gallery-img-4.jpg" alt="" />
-                            <img src="https://i.postimg.cc/HkdcTKjk/gallery-img-8.jpg" alt="" />
-                          </div>
-                          <i class='bx bx-right-arrow-alt button' id="next"></i>
-                        </div>
-                    </div>
+                    <img src="https://i.postimg.cc/8PM1ZHqS/pexels-alex-azabache-3182452.jpg" alt="" class="about__img">
 
                     <div class="about__data">
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Experiencia</h3>
-                                <span class="about__subtitle">8 años trabajando</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Paquetes</h3>
-                                <span class="about__subtitle">+ 2k Vendidos</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Soporte</h3>
-                                <span class="about__subtitle">24/7</span>
-                            </div>
-                        </div>
-
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Experiencia</h3>
-                                <span class="about__subtitle">8 años trabajando</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Paquetes</h3>
-                                <span class="about__subtitle">+ 2k Vendidos</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Soporte</h3>
-                                <span class="about__subtitle">24/7</span>
-                            </div>
-                        </div>
-
                         <p class="about__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nulla numquam harum soluta itaque ducimus atque, aut 
-                            doloremque iure nesciunt laboriosam!
+                            Cuba es definitivamente uno de los destinos más elegidos cuando se planea viajar al Caribe, y esto no es solamente por sus hermosísimas playas, su maravilloso clima tropical que dura todo el año y la curiosidad que despierta por ser uno de los últimos países socialistas del mundo, sino sobre todo, por la reconocida calidez humana de su gente, su deliciosa gastronomía, y principalmente, por el altísimo nivel de sus propuestas artísticas, que la han situado como uno de los principales destino para los amantes del turismo cultural .Por supuesto que cualquier visita a Cuba debe incluir a  su capital, La Habana, fundada en 1519 como la ciudad más importante del Nuevo Mundo y cuyo centro histórico fue declarado Patrimonio Cultural de la Humanidad en 1982.   La original estructura urbana de La Habana Vieja permanece intacta. Estrechas calles empedradas conducen a bellísimas plazas, iglesias, fortalezas y hermosos palacios entre  más de 900 edificaciones  consideradas joyas de la arquitectura colonial, barroca, neoclásica o art decó que recuerdan la grandeza de una ciudad considerada hasta inicios del S XX como “La Llave del Golfo” .Siempre bañada por el mar y rodeada por su impresionante malecón , conocer la Habana es recorrer la historia de la arquitectura, de la ciudad colonial a la Habana moderna, con sus barrios residenciales, sus hoteles románticos y sus impresionantes museos y teatros que le ganaron ser considerada en la primera mitad del siglo XX una de las tres ciudades más importantes de América. 
+
                         </p>
 
-                        <a href="#contact" class="button">Contactame</a>
+                        <a href="/contacto" class="button">Contáctenos</a>
                     </div>
                 </div>
             </section>
 
-            <section class="about section" id="about">
-                <span class="section__subtitle">Disfruta de las </span>
-                <h2 class="section__title">Experiencias que Ofrecemos</h2>
 
-                <div class="about__container container grid">
-                    <div class="wrapper">
-                        <i class='bx bx-left-arrow-alt button' id="prev"></i>
-                        <div class="image-container">
-                          <div class="carousel">
-                            <img src="https://i.postimg.cc/nchrXbsP/gallery-img-6.jpg" alt="" />
-                            <img src="https://i.postimg.cc/gjtRxH7T/gallery-img-2.jpg" alt="" />
-                            <img src="https://i.postimg.cc/g0bhLJMm/gallery-img-4.jpg" alt="" />
-                            <img src="https://i.postimg.cc/HkdcTKjk/gallery-img-8.jpg" alt="" />
-                            <img src="https://i.postimg.cc/nchrXbsP/gallery-img-6.jpg" alt="" />
-                            <img src="https://i.postimg.cc/gjtRxH7T/gallery-img-2.jpg" alt="" />
-                            <img src="https://i.postimg.cc/g0bhLJMm/gallery-img-4.jpg" alt="" />
-                            <img src="https://i.postimg.cc/HkdcTKjk/gallery-img-8.jpg" alt="" />
-                          </div>
-                          <i class='bx bx-right-arrow-alt button' id="next"></i>
-                        </div>
-                    </div>
+            <!--=============== EXPERIENCIAS ===============-->
+            <section class="services section" id="services">
+                <span class="section__subtitle">Disfrute siempre de las mejores</span>
+                <h2 class="section__title">Experiencias</h2>
 
-                    <div class="about__data">
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Experiencia</h3>
-                                <span class="about__subtitle">8 años trabajando</span>
-                            </div>
+                <div class="projects__content grid " id="productos">
+                    <article class="projects__card">
+                        <img src="https://i.postimg.cc/wByR2gXr/Imagen_de_WhatsApp_2023-10-24_a_las_09.29.20_a611af00.jpg" alt="" class="projects__img">
 
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Paquetes</h3>
-                                <span class="about__subtitle">+ 2k Vendidos</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Soporte</h3>
-                                <span class="about__subtitle">24/7</span>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitles">Experiencia de</span>
+                                <h3 class="projects__title">Arte</h3>
+                                <a href="/artecuba" class="projects__button button">
+                                Leer Más <i class="ri-arrow-right-line"></i>
+                                </a>
                             </div>
                         </div>
+                    </article>
 
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Experiencia</h3>
-                                <span class="about__subtitle">8 años trabajando</span>
-                            </div>
+                    <article class="projects__card">
+                        <img src="https://i.postimg.cc/B61BPyCf/pexels-mehmet-turgut-kirkgoz-18747883.jpg" alt="" class="projects__img">
 
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Paquetes</h3>
-                                <span class="about__subtitle">+ 2k Vendidos</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bxs-badge-check about__icon'></i>
-                                <h3 class="about__title">Soporte</h3>
-                                <span class="about__subtitle">24/7</span>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitles">Experiencia de</span>
+                                <h3 class="projects__title">Arquitectura</h3>
+                                <a href="/arquitecturacuba" class="projects__button button">
+                                    Leer Más <i class="ri-arrow-right-line"></i>
+                                </a>
                             </div>
                         </div>
+                    </article>
 
-                        <p class="about__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Nulla numquam harum soluta itaque ducimus atque, aut 
-                            doloremque iure nesciunt laboriosam!
-                        </p>
+                    <article class="projects__card">
+                        <img src="https://i.postimg.cc/nLbn8wQ2/15.jpg" alt="" class="projects__img">
 
-                        <a href="#contact" class="button">Contactame</a>
-                    </div>
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitles">Experiencia de</span>
+                                <h3 class="projects__title">Fotografia</h3>
+                                <a href="/fotografiacuba" class="projects__button button">
+                                    Leer Más <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="https://i.postimg.cc/xjsSFFRw/Imagen_de_WhatsApp_2023-11-23_a_las_11.33.46_330bb6af.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitles">Experiencia de</span>
+                                <h3 class="projects__title">Religión</h3>
+                                <a href="/religioncuba" class="projects__button button">
+                                    Leer Más <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="https://i.postimg.cc/tJZQWGrY/2019-03-16.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitles">Experiencia de</span>
+                                <h3 class="projects__title">Shopping</h3>
+                                <a href="/shoppingcuba" class="projects__button button services__button">
+                                    Leer Más <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
+            </section>
+
+            <!--=============== ITINERARIOS ===============-->
+            <section class="itinerarios section" id="itinerarios">
+                <span class="section__subtitle">Échale un ojo a nuestros</span>
+                <h2 class="section__title">Itinerarios</h2>
+
+                <div class="itinerarios--wrapper">
+                    <input type="radio" name="slider" id="tab-1" checked>
+                    <input type="radio" name="slider" id="tab-2" >
+                    <!--<input type="radio" name="slider" id="tab-3">-->
+                    <div class="header__card">
+                      <label for="tab-1" class="tab-1">5 días</label>
+                      <label for="tab-2" class="tab-2">7 días</label>
+                     <!-- <label for="tab-3" class="tab-3">9 días</label>-->
+                      <div class="slider"></div>
+                    </div>
+                    <div class="card-area">
+                      <div class="cards">
+                        <div class="row row-1">
+                          <div class="price-details">
+                            <span class="price">5</span>
+                            <p>El itinerario incluye las siguientes actividades:</p>
+                          </div>
+                          <ul class="features">
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour de Ciudad. La Habana Colonial.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Reservación en  Paladar Los Mercaderes (Sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Drinks en Bleco (Sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour de Arte, 2 estudios y Museo Bellas Artes.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour panorámico de ciudad en autos clásicos convertibles. </span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Cena en  El cocinero (Sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Acceso VIP en Fabrica del Arte (música en vivo).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Transporte privado de La Habana a Viñales.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour en Caballo por el valle de Viñales comida criolla incluida.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Reservación en restaurante Cinco Sentidos (sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Drinks en Yarini (Sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Descubre las huellas de Hemingway en un vehículo descapotable clásico americano.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Comida en El del Frente (sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Clases de Salsa (Sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Comida en La Guarida (sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Música en vivo en La Zorra y El Cuervo ( Jazz Club) (sugerencia).</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Transporte privado desde el hotel al aeropuerto.</span></li>
+                          </ul>
+                        </div>
+                        <div class="row">
+                          <div class="price-details">
+                            <span class="price">7</span>
+                            <p>El itinerario incluye todas las actividades del itinerario 
+                                de 5 días junto a las siguientes actividades:
+                            </p>
+                          </div>
+                          <ul class="features">
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Transporte privado de La Habana a Cienfuegos.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour de arquitectura colonial por Cienfuegos.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Comida en restaurante El Mirador en Cienfuegos.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Continúa transporte privado a Trinidad.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Check in en Trinidad.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Cena y disfrute de la vida nocturna en Trinidad.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour de Ciudad por la Trinidad Colonial.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Check in en Trinidad.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour en valle de los ingenios .</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Reservación en Restaurante II Trionfo.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Vida nocturna en Trinidad.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Salida hacia Santa Clara.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Tour de Ciudad  y comida en Santa Clara.</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Transporte privado al aeropuerto José Martí en La Habana.</span></li>
+                          </ul>
+                        </div>
+                       <!-- <div class="row">
+                          <div class="price-details">
+                            <span class="price">9</span>
+                            <p>El itinerario incluye todas las actividades del itinerario 
+                                de 5 días junto a las siguientes actividades:
+                            </p>
+                          </div>
+                          <ul class="features">
+                            <li><i class='bx bx-check services__modal-icon'></i><span>200 GB Premium Bandwidth</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>FREE 100+ Installation Scripts WordPress Supported</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Two FREE Domain Registration .com and .np extensions only</span></li>
+                            <li><i class='bx bx-check services__modal-icon'></i><span>Unlimited Email Accounts & Databases</span></li>
+                          </ul>
+                        </div>-->
+                      </div>
+                    </div>
+                  </div>
+                
             </section>
             
+            <br><br><br>
         </main>
 
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
-                <h1 class="footer__title">Art Traces</h1>
-
-                <ul class="footer__list">
-                    <li>
-                        <a href="#about" class="footer__link">Sobre Nosotros</a>
-                    </li>
-
-                    <li>
-                        <a href="#services" class="footer__link">Experiencias</a>
-                    </li>
-
-                    <li>
-                        <a href="#work" class="footer__link">Blogs</a>
-                    </li>
-                </ul>
-
+        
+                <div class="footer__logo">
+                    <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                    <h1 class="footer__title">Art Traces</h1>
+                </div>
+        
                 <ul class="footer__social">
                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-facebook'></i>
                     </a>
-
+        
                     <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-instagram'></i>
                     </a>
-
+        
                     <a href="https://twitter.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-twitter'></i>
                     </a>
                 </ul>
-
+        
                 <span class="footer__copy">
-                    &#169; Art Traces. Todos los derechos reservados
+                    &#169; Art Traces. All rights reserved
                 </span>
             </div>
         </footer>
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src="/assets/js/scrollreveal.min.js"></script>
+        <script src="{{url_for('assets', path='/js/scrollreveal.min.js')}}"></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src="/assets/js/swiper-bundle.min.js"></script>
+        <script src="{{url_for('assets', path='/js/swiper-bundle.min.js')}}"></script>
 
         <!--=============== MIXITUP FILTER ===============-->
-        <script src="/assets/js/mixitup.min.js"></script>
+        <script src="{{url_for('assets', path='/js/mixitup.min.js')}}"></script>
 
-        <!--=============== DESTINOS JS ===============-->
+        <!--=============== MAIN JS ===============-->
         <script src="{{url_for('assets', path='/js/destinos.js')}}"></script>
     </body>
 </html>

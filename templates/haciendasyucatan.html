@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://i.postimg.cc/jSzLp3VJ/Art-17.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
+
+        
+
+        <title> Art Traces | Haciendas de Yucatán</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                    <div class="nav__logo_text">ART - TRACES</div>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link ">
+                                INICIO
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/destinocuba" class="nav__link">
+                                DESTINO CUBA
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/destinomexico" class="nav__link active-link">
+                                DESTINO YUCATÁN
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/indexgaleria" class="nav__link">
+                                GALERÍA
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/contacto" class="nav__link">
+                                TRIP REQUEST
+                            </a>
+                        </li>
+                    </ul>
+                    <br><br><br><br>
+                    <a href="/haciendasyucatanenglish" class="button">
+                        English
+                    </a>
+
+                    <i class="bx bx-x nav__close" id="nav-close"></i>
+                </div>
+
+                
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+                
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+
+
+            <!--=============== EXPERIENCIA 1 ===============-->
+
+            <section class="about section" id="about">
+                <span class="section__subtitle">Disfruta de una experiencia de</span>
+                <h2 class="section__title">Haciendas</h2>
+
+                <div class="about__container container grid">
+                    
+
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Sotuta de Peon</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Xcanatun</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Mucuyché</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title"> Temozon</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Yaxcopoil</h3>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        
+
+                        <p class="about__description">
+                            Hubo una época en la que Yucatán tenía más contacto con Europa y el Caribe que con el resto del país,  pues en este estado se producía en abundancia lo que en aquel entonces llamaban el “oro verde”: el henequén. De esta planta se extraían resistentes fibras para elaborar textiles, sogas y cuerdas de navegación.
+                            El mejor testimonio de aquellos años de bonanza son las haciendas de Yucatán, verdaderos palacios establecidos por los dueños de las plantaciones. Y aunque las innovaciones tecnológicas y las revoluciones dieron por finalizado ese periodo de riqueza, provocando el abandono de muchas de estas haciendas, muchas de ellas han renacido en el siglo XXI para ofrecer una experiencia de lujo absoluto.
+                        </p>
+
+                        <a href="/contacto" class="button">Contáctenos</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <span class="section__subtitle">Disfruta las </span>
+                <h2 class="section__title">Experiencias en Nuestra Galería</h2>
+
+                <div class="wrapper">
+                    <i class='bx bx-left-arrow-alt button' id="prev"></i>
+                    <div class="image-container">
+                      <div class="carousel">
+                        <img src="https://i.postimg.cc/4NTs6GyR/antonio-alcantara-DWIb-Vg-Yzu6-U-unsplash.jpg" alt="" />
+                        <img src="https://i.postimg.cc/X78S9yt9/ivan-cervantes-Y8hc-Zl-K2-Ps-Q-unsplash.jpg" alt="" />
+                        <img src="https://i.postimg.cc/2S0YNBwC/jorge-ramirez-t-Xxzz-KCNkx-I-unsplash.jpg" alt="" />
+                        <img src="https://i.postimg.cc/g229s2PQ/mick-haupt-E7mgz-Ag-HW0-Y-unsplash.jpg" alt="" />
+                      </div>
+                      <i class='bx bx-right-arrow-alt button' id="next"></i>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+
+                <div class="footer__logo">
+                    <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                    <h1 class="footer__title">Art Traces</h1>
+                </div>
+                
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Art Traces. Todos los derechos reservados
+                </span>
+            </div>
+        </footer>
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="{{url_for('assets', path='/js/scrollreveal.min.js')}}"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="{{url_for('assets', path='/js/swiper-bundle.min.js')}}"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="{{url_for('assets', path='/js/mixitup.min.js')}}"></script>
+
+        <!--=============== DESTINOS JS ===============-->
+        <script src="{{url_for('assets', path='/js/destinos.js')}}"></script>
+    </body>
+</html>

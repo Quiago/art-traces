@@ -111,7 +111,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -153,29 +153,39 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: var(--body-color);
 }
 
 /*=============== NAV ===============*/
 .nav {
-  height: var(--header-height);
+  height: var(--header-height)+1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav__logo, .nav__toggle {
-  color: #fff;
-  text-shadow: 0 0 8px var(--title-color);
-}
-
-.nav__logo {
-  font-weight: var(--font-semi-bold);
+  
 }
 
 .nav__toggle {
-  font-size: 1.2rem;
-  cursor: pointer;
+  color: var(--title-color);
+  font-size: 2rem;
+}
+
+.nav__logo {
+  width: 85px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.nav__logo_text{
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  white-space: nowrap;
+}
+
+.nav__img {
+  
+  size: 25px;
 }
 
 .nav__menu {
@@ -193,6 +203,7 @@ img {
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
     transition: .4s;
+    
   }
 }
 
@@ -206,7 +217,7 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  text-shadow: 0 0 10px var(--title-color);
+  
 }
 
 .nav__link:hover {
@@ -495,40 +506,64 @@ img {
 .skills__level{
   font-size: var(--tiny-font-size);
 }
-/*=============== SERVICES ===============*/
-.services__container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding-top: 1rem;
-}
 
-.services__card{
-  background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
+/*=============== PROJECTS ===============*/
+.projects__card{
+  position: relative;
   border-radius: 1rem;
+  overflow: hidden;
+  width: 90%;
+  
 }
 
-.services__title{
+.projects__content{
+  grid-template-columns: repeat(1,1fr);
+  gap: 1.5rem;
+  padding-left: 2.2rem;
+}
+
+.projects__card img{
+  width: 100%;
+  height: 100%;
+}
+
+.projects__modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100;
+  left: 0;
+  background: linear-gradient(180deg, 
+  hsl(205, 24%, 40%, .3) 0%,
+  hsl(205, 24%, 4%, 1) 95%);
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: 3s;
+}
+
+.projects__subtitles,
+.projects__title{
+  color: #fff;
+}
+
+.projects__subtitles{
+  font-size: var(--smaller-font-size);
+}
+
+.projects__title{
   font-size: var(--h3-font-size);
-  margin-bottom: 2.5rem;
+  margin-bottom: .75rem;
 }
 
-.services__button{
-  color: var(--title-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  column-gap: .25rem;
+.projects__button{
+  padding: .8rem;
   cursor: pointer;
 }
 
-.services__button:hover .services__icon{
-  transform: translate(.25rem);
-}
-
-.services__icon{
-  font-size: 1rem;
-  transition: .4s;
+.projects__card:hover .projects__modal{
+  bottom: 0;
+  transition: 1s;
 }
 
 /* Services modal */
@@ -580,9 +615,14 @@ img {
   column-gap: .5rem;
 }
 
+.services__modal-item a{
+  color: var(--title-color);
+}
+
+
 .services__modal-icon{
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--title-color);
 }
 
 .services__modal-info{
@@ -603,7 +643,6 @@ img {
   opacity: 1;
   visibility: visible;
 }
-
 /*=============== Gallery ===============*/
 
 .gallery {
@@ -1015,21 +1054,28 @@ img {
 
 /*=============== FOOTER ===============*/
 .footer{
-  background-color: var(--first-color);
+  background-color: var(--title-color);
 }
 
 .footer__container{
-  padding: 2rem 0 6rem;
+  padding: 1rem 0 3rem;
+  
 }
 
 .footer__title,
 .footer__link{
-  color: var(--title-color);
+  color: #fff;
+}
+
+.footer__logo{
+  width: 300px;
+  margin: auto;
 }
 
 .footer__title{
   text-align: center;
   margin-bottom: 2rem;
+  white-space: nowrap;
 }
 
 .footer__list{
@@ -1046,8 +1092,8 @@ img {
 }
 
 .footer__social-link{
-  background-color: var(--title-color);
-  color: var(--first-color);
+  background-color: var(--first-color);
+  color: var(--title-color);
   padding: .25rem;
   border-radius: .25rem;
   font-size: 1rem;
@@ -1057,7 +1103,7 @@ img {
 .footer__copy{
   display: block;
   margin-top: 3rem;
-  color: var(--title-color);
+  color: #fff;
   text-align: center;
   font-size: var(--smaller-font-size);
 }
@@ -1075,6 +1121,7 @@ img {
   position: relative;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 .wrapper i.button {
   position: absolute;
@@ -1104,7 +1151,7 @@ i#next {
 }
 .image-container {
   height: 380px;
-  max-width: 700px;
+  max-width: 500px;
   width: 100%;
   overflow: hidden;
 }
@@ -1122,15 +1169,176 @@ i#next {
   object-fit: cover;
 }
 
+/*=============== Itinerarios ===============*/
+
+.itinerarios--wrapper{
+  width: 345px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  margin: auto;
+  color: var(--title-color);
+  }
+
+  .itinerarios--wrapper .header__card{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  position: relative;
+  
+  }
+  .header__card label{
+  height: 100%;
+  z-index: 2;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+#tab-1:checked ~ .header__card .tab-1,
+#tab-2:checked ~ .header__card .tab-2
+/*#tab-3:checked ~ .header__card .tab-3*/{
+  color: #fff;
+
+}
+
+.header__card label:nth-child(1){
+ left: 15%;
+}
+
+.header__card label:nth-child(2){
+  left: 25%;
+}
+.header__card .slider{
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: var(--title-color);
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .header__card .slider{
+  left: 15%;
+  width: 100px;
+  transform: translateX(5%);
+}
+#tab-2:checked ~ .header__card .slider{
+  left: 70%;
+  width: 100px;
+  transform: translateX(-50%);
+}
+#tab-3:checked ~ .header__card .slider{
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+.itinerarios--wrapper input[type="radio"]{
+  display: none;
+}
+.card-area{
+  overflow: hidden;
+}
+.card-area .cards{
+  display: flex;
+  width: 300%;
+}
+.cards .row{
+  width: 33.4%;
+}
+.cards .row-1{
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .card-area .cards .row-1{
+   margin-left: 0%;
+}
+#tab-2:checked ~ .card-area .cards .row-1{
+  margin-left: -33.4%;
+}
+#tab-3:checked ~ .card-area .cards .row-1{
+   margin-left: -66.8%;
+}
+.row .price-details{
+  margin: 20px 0;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.price-details .price{
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+}
+.price-details .price::before,
+.price-details .price::after{
+  position: absolute;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.price-details .price::before{
+
+  left: -13px;
+  top: 17px;
+  font-size: 20px;
+}
+.price-details .price::after{
+  content: "Días";
+  right: -33px;
+  bottom: 17px;
+  font-size: 13px;
+}
+.price-details p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+.row .features li{
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.features li i{
+  background: var(--title-color);
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.features li span{
+  margin-left: 10px;
+}
+.itinerarios--wrapper button{
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  background: var(--title-color);
+  transition: transform 0.3s ease;
+}
+.itinerarios--wrapper button:hover{
+  transform: scale(0.98);
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
-  background-color: hsl(var(--second-hue), 8%, 38%);
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: hsl(var(--second-hue), 8%, 26%);
+  background-color: var(--title-color);
   border-radius: .5rem;
 }
 
@@ -1215,18 +1423,9 @@ i#next {
     padding: 2rem 4rem;
   }
 
-  .services__container{
-    grid-template-columns: repeat(2, 160px);
+  .projects__content{
+    grid-template-columns: 332px;
     justify-content: center;
-  }
-
-  .services__modal-content{
-    width: 500px;
-    padding: 4.5rem 2.5rem 2.5rem;
-  }
-
-  .services__modal-description{
-    padding: 0 3.5rem;
   }
 
   .work__container{
@@ -1273,17 +1472,26 @@ i#next {
   .gallery-thumbs {
     width: 280px;
   }
+
+  .services__modal-content{
+    width: 500px;
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+
+  .services__modal-description{
+    padding: 0 3.5rem;
+  }
 }
 
 @media screen and (min-width: 768px){
 
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 2.5rem);
   }
   .nav__link {
-    color: white;
+    
     text-transform: initial;
-    text-shadow: 0 0 10px var(--title-color);
+    
   }
   .nav__link:hover {
     color: var(--title-color);
@@ -1292,11 +1500,11 @@ i#next {
   .nav__menu {
     display: flex;
     column-gap: 1rem;
-    
+    align-items: center;
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 2.5rem;
   }
   .nav__toggle, .nav__close {
     display: none;
@@ -1341,6 +1549,11 @@ i#next {
     justify-content: center;
     column-gap: 3rem;
   }
+
+  .projects__content{
+    grid-template-columns: repeat(2, 332px);
+  }
+
 }
 
 /* Para dispositivos largos */
@@ -1350,7 +1563,17 @@ i#next {
     margin-right: auto;
   }
 
-  
+  .projects__content{
+    grid-template-columns: repeat(3, 320px);
+  }
+
+  .alojamiento__content{
+    grid-template-columns: repeat(2, 320px);
+  }
+
+  .projects__modal{
+    padding: 1.5rem;
+  }
 
   .section{
     padding: 6.5rem 0 1rem;
@@ -1410,20 +1633,12 @@ i#next {
   .about__description{
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
+    text-align: justify;
   }
 
   .skills__container{
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
-  }
-
-  .services__container{
-    grid-template-columns: repeat(3, 192px);
-    column-gap: 3rem;
-  }
-
-  .services__card{
-    padding: 5rem 2rem 1.5rem;
   }
 
   .work__container{
@@ -1486,4 +1701,13 @@ i#next {
     padding: .4rem;
     border-radius: .5rem;
   }
+
+  .footer__logo{
+    width: 400px;
+  }
+
+  .itinerarios--wrapper{
+    width: 400px;
+  }
+  
 }

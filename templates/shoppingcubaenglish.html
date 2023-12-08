@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://i.postimg.cc/jSzLp3VJ/Art-17.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
+
+        <title> Art Traces | Shopping in Cuba</title>
+
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                    <div class="nav__logo_text">ART - TRACES</div>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/main" class="nav__link ">
+                                HOME
+                            </a>
+                        </li>
+        
+                        <li class="nav__item">
+                            <a href="/destinocubaenglish" class="nav__link active-link">
+                                DESTINATION CUBA
+                            </a>
+                        </li>
+        
+                        <li class="nav__item">
+                            <a href="/destinomexicoenglish" class="nav__link">
+                                DESTINATION YUCATÁN
+                            </a>
+                        </li>
+        
+                        <li class="nav__item">
+                            <a href="/indexgaleriaenglish" class="nav__link">
+                                GALLERY
+                            </a>
+                        </li>
+        
+                        <li class="nav__item">
+                            <a href="/contactoenglish" class="nav__link">
+                                TRIP REQUEST
+                            </a>
+                        </li>
+                    </ul>
+                    <br><br><br><br>
+                    <a href="/shoppingcuba" class="button">
+                        Spanish
+                    </a>
+        
+                    <i class="bx bx-x nav__close" id="nav-close"></i>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+        
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+
+
+            <!--=============== EXPERIENCE 1 ===============-->
+
+            <section class="about section" id="about">
+                <span class="section__subtitle">Enjoy a charming </span>
+                <h2 class="section__title">Shopping Experience</h2>
+
+                <div class="about__container container grid">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Visit antique houses.</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Visit craft workshops.</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Visit craft workshops.</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Visit official tobacco and rum stores.</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bxs-badge-check about__icon'></i>
+                            <h3 class="about__title">Visit art galleries.</h3>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        
+
+                        <p class="about__description">  
+                            The private shopping tour is an excellent opportunity
+                            to visit antique houses, charming private craft workshops, jewelry,
+                            ceramics, fashion, and unique gifts that could be the best
+                            souvenirs of your time in Cuba. Guided by a local guide who will open
+                            the doors of private places where you can meet creators face to face
+                            and attend the process of creating each piece, and, if needed,
+                            we can facilitate the purchase or shipping process to your home
+                            if necessary. We tailor this tour to your personal interests,
+                            also including the best official stores for tobacco, rum, galleries,
+                            traditional fragrances, toys, posters, and any type of item that
+                            could be a unique memento of your trip to Cuba, helping you discover
+                            hidden places full of treasures that convey the spirit of each city.
+                        </p>
+
+                        <a href="/contactoenglish" class="button">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <span class="section__subtitle">Enjoy the </span>
+                <h2 class="section__title">Experiences in Our Gallery</h2>
+
+                <div class="wrapper">
+                    <i class='bx bx-left-arrow-alt button' id="prev"></i>
+                    <div class="image-container">
+                      <div class="carousel">
+                        <img src="https://i.postimg.cc/tJZQWGrY/2019-03-16.jpg" alt="" />
+                        <img src="https://i.postimg.cc/Y05cxDV8/2019-06-16.jpg" alt="" />
+                        <img src="https://i.postimg.cc/pXGzrxBs/Imagen_de_WhatsApp_2023-11-22_a_las_20.22.43_3db04d9a.jpg" alt="" />
+                        <img src="https://i.postimg.cc/Gtf9j3tK/Imagen_de_WhatsApp_2023-11-23_a_las_11.33.19_94339804.jpg" alt="" />
+                        <img src="https://i.postimg.cc/Kz1ft6jc/Imagen_de_WhatsApp_2023-10-24_a_las_09.29.42_b6d2b58b.jpg" alt="" />
+                      </div>
+                      <i class='bx bx-right-arrow-alt button' id="next"></i>
+                    </div>
+                </div>
+                <br><br>
+            </section>
+        </main>
+
+       <!--=============== FOOTER ===============-->
+       <footer class="footer">
+        <div class="footer__container container">
+    
+            <div class="footer__logo">
+                <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                <h1 class="footer__title">Art Traces</h1>
+            </div>
+    
+            <ul class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+    
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+    
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+    
+            <span class="footer__copy">
+                &#169; Art Traces. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="{{url_for('assets', path='/js/scrollreveal.min.js')}}"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="{{url_for('assets', path='/js/swiper-bundle.min.js')}}"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="{{url_for('assets', path='/js/mixitup.min.js')}}"></script>
+
+        <!--=============== DESTINATIONS JS ===============-->
+        <script src="{{url_for('assets', path='/js/destinations.js')}}"></script>
+    </body>
+
+</html>
