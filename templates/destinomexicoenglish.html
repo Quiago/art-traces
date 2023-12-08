@@ -11,10 +11,10 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/styles.css')}}">
 
         <title> Art Traces | Yucatán </title>
     </head>
@@ -30,37 +30,37 @@
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="./indexenglish.html" class="nav__link">
+                    <a href="/main" class="nav__link">
                         HOME
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./destinocubaenglish.html" class="nav__link">
+                    <a href="/destinocubaenglish" class="nav__link">
                         DESTINATION CUBA
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./destinomexicoenglish.html" class="nav__link active-link">
+                    <a href="/destinomexicoenglish" class="nav__link active-link">
                         DESTINATION YUCATÁN
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./indexgaleriaenglish.html" class="nav__link">
+                    <a href="/indexgaleriaenglish" class="nav__link">
                         GALLERY
                     </a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./contactoenglish.html" class="nav__link">
+                    <a href="/contactoenglish" class="nav__link">
                         TRIP REQUEST
                     </a>
                 </li>
             </ul>
             <br><br><br><br>
-            <a href="./destinomexico.html" class="button">
+            <a href="/destinomexico" class="button">
                 Spanish
             </a>
 
@@ -84,7 +84,7 @@
         <div class="home__data">
             <span class="home__data-subtitle">Enjoy</span>
             <h1 class="home__data-title">The <br> Cultural Wonders <b>of Mexico</b></h1>
-            <a href="./contactoenglish.html" class="home__button button">Contact Us</a>
+            <a href="/contactoenglish" class="home__button button">Contact Us</a>
             <a href="#itinerarios" class="home__button button">Sample Itineraries</a>
         </div>
 
@@ -115,7 +115,7 @@
                 Discover the magic of Yucatán, one of Mexico's most attractive states. Located between the Caribbean Sea and the turquoise waters of the Gulf of Mexico, with stunning beaches, essential archaeological sites, vibrant traditions, and delightful cuisine, the Yucatán Peninsula is the perfect destination for combining cultural and adventure tourism throughout the year. Known for its rich history and culture, Yucatán boasts some of the world's most important places. Chichén Itzá, Uxmal, and Ek Balam are the top 3 of the more than 18 archaeological zones where you can feel the ancestral energy of the Mayan culture. Beautiful henequen haciendas tell the colonial history of the region, tracing a timeline that links magical towns, romantic cities, indigenous communities, exuberant mansions, and modern architecture that is awe-inspiring for its respect for tradition and mastery in the design of its spaces. Every corner of Yucatán possesses the poetry that will transport you to bygone times. Mérida, the state capital, will surprise you with a blend of modernity and traditions, earning it the title of Cultural Capital of the Southeast for its vibrant artistic scene, boutique hotels, warmth of its inhabitants, and contemporary cuisine that blends heritage recipes with gastronomic modernity.
             </p>
 
-            <a href="./contactoenglish.html" class="button">Contact Us</a>
+            <a href="/contactoenglish" class="button">Contact Us</a>
         </div>
     </div>
             </section>
@@ -133,7 +133,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Art</h3>
-                    <a href="./arteyucatanenglish.html" class="projects__button button">
+                    <a href="/arteyucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -147,7 +147,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Architecture</h3>
-                    <a href="./arquitecturayucatanenglish.html" class="projects__button button">
+                    <a href="/arquitecturayucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -161,7 +161,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Wellness</h3>
-                    <a href="./bienestaryucatanenglish.html" class="projects__button button">
+                    <a href="/bienestaryucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -175,7 +175,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Cenotes</h3>
-                    <a href="./cenotesyucatanenglish.html" class="projects__button button">
+                    <a href="/cenotesyucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -189,7 +189,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Estate</h3>
-                    <a href="./haciendasyucatanenglish.html" class="projects__button button">
+                    <a href="/haciendasyucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -203,7 +203,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Gastronomy</h3>
-                    <a href="./gastronomiayucatanenglish.html" class="projects__button button">
+                    <a href="/gastronomiayucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -217,7 +217,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Nightlife</h3>
-                    <a href="./vidanocturnayucatanenglish.html" class="projects__button button">
+                    <a href="/vidanocturnayucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -231,7 +231,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">Ecotourism</h3>
-                    <a href="./ecoturismoyucatanenglish.html" class="projects__button button">
+                    <a href="/ecoturismoyucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -245,7 +245,7 @@
                 <div>
                     <span class="projects__subtitles">Experience of</span>
                     <h3 class="projects__title">People to People</h3>
-                    <a href="./peopleyucatanenglish.html" class="projects__button button">
+                    <a href="/peopleyucatanenglish" class="projects__button button">
                         Read More <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>

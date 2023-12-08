@@ -11,10 +11,10 @@
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
             <!--=============== SWIPER CSS ===============-->
-            <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+            <link rel="stylesheet" href="/{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
         
             <!--=============== CSS ===============-->
-            <link rel="stylesheet" href="/assets/css/styles.css">
+            <link rel="stylesheet" href="/{{url_for('assets', path='/css/styles.css')}}">
         
             <title> Art Traces | Home </title>
         </head>
@@ -32,25 +32,25 @@
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="./indexenglish.html" class="nav__link active-link">
+                                <a href="/main" class="nav__link active-link">
                                     HOME
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./destinocubaenglish.html" class="nav__link">
+                                <a href="/destinocubaenglish" class="nav__link">
                                     DESTINATION CUBA
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./destinomexicoenglish.html" class="nav__link">
+                                <a href="/destinomexicoenglish" class="nav__link">
                                     DESTINATION YUCATÁN
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./indexgaleriaenglish.html" class="nav__link">
+                                <a href="/indexgaleriaenglish" class="nav__link">
                                     GALLERY
                                 </a>
                             </li>
@@ -62,13 +62,13 @@
                             </li>
             
                             <li class="nav__item">
-                                <a href="./contactoenglish.html" class="nav__link">
+                                <a href="/contactoenglish" class="nav__link">
                                     TRIP REQUEST
                                 </a>
                             </li>
                         </ul>
                         <br><br><br><br>
-                        <a href="./index.html" class="button">
+                        <a href="/" class="button">
                             Spanish
                         </a>
             
@@ -91,7 +91,7 @@
         <div class="home__data">
             <span class="home__data-subtitle">Discover Your Place</span>
             <h1 class="home__data-title">Enjoy the <br> Most <b>Beautiful <br> Experiences</b></h1>
-            <a href="./contactoenglish.html" class="home__button button">Trip Request</a>
+            <a href="/contactoenglish" class="home__button button">Trip Request</a>
         </div>
 
         <div class="home__social">
@@ -122,7 +122,7 @@
                 At Art Traces, our passion is to create unique travel experiences with a cultural focus. We specialize in fascinating destinations such as the Yucatán Peninsula in Mexico and the main cities of Cuba. Our trips are tailor-made according to your interests, providing you the opportunity to immerse yourself in the local culture and explore the hidden treasures of each destination. You can have encounters with artists in their own studios, savor delicious regional cuisine guided by renowned chefs, take a journey through time visiting impressive architectural sites, and immerse yourself in the magic of nature through ecotourism. We will show you unique and exclusive places to make your stay an unforgettable experience. We believe in the beauty of details, the importance of diversity, and advocate for local knowledge and sustainable tourism. That's why we strive to provide you with excellent service at every stage of your journey. Our goal is to create indelible memories that will inspire you for a lifetime.
             </p>
 
-            <a href="./contactoenglish.html" class="button">Contact Us</a>
+            <a href="/contactoenglish" class="button">Contact Us</a>
                     </div>
                 </div>
             </section>
@@ -793,7 +793,7 @@
             
                         <h3 class="destino__title">Cuba</h3>
             
-                        <a href="./destinocubaenglish.html" class="destino__button">
+                        <a href="/destinocubaenglish" class="destino__button">
                             Explore <i class='bx bx-right-arrow-alt destino__icon'></i>
                         </a>
                     </div>
@@ -803,7 +803,7 @@
             
                         <h3 class="destino__title">Yucatán</h3>
             
-                        <a href="./destinomexicoenglish.html" class="destino__button">
+                        <a href="/destinomexicoenglish" class="destino__button">
                             Explore <i class='bx bx-right-arrow-alt destino__icon'></i>
                         </a>
                     </div>

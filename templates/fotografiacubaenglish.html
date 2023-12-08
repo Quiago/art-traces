@@ -11,10 +11,10 @@
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         
             <!--=============== SWIPER CSS ===============-->
-            <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+            <link rel="stylesheet" href="/{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
         
             <!--=============== CSS ===============-->
-            <link rel="stylesheet" href="/assets/css/styles.css">
+            <link rel="stylesheet" href="/{{url_for('assets', path='/css/styles.css')}}">
         
             <title>  Art Traces | Photography of Cuba </title>
         </head>
@@ -31,37 +31,37 @@
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="./indexenglish.html" class="nav__link ">
+                                <a href="/main" class="nav__link ">
                                     HOME
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./destinocubaenglish.html" class="nav__link active-link">
+                                <a href="/destinocubaenglish" class="nav__link active-link">
                                     DESTINATION CUBA
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./destinomexicoenglish.html" class="nav__link">
+                                <a href="/destinomexicoenglish" class="nav__link">
                                     DESTINATION YUCATÁN
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./indexgaleriaenglish.html" class="nav__link">
+                                <a href="/indexgaleriaenglish" class="nav__link">
                                     GALLERY
                                 </a>
                             </li>
             
                             <li class="nav__item">
-                                <a href="./contactoenglish.html" class="nav__link">
+                                <a href="/contactoenglish" class="nav__link">
                                     TRIP REQUEST
                                 </a>
                             </li>
                         </ul>
                         <br><br><br><br>
-                        <a href="./fotografiacuba.html" class="button">
+                        <a href="/fotografiacuba" class="button">
                             Spanish
                         </a>
             
@@ -107,7 +107,7 @@
                                 Cuban Art Traces offers two photography tours: "IMAGES TAKEN" and "TAKING IMAGES." Each can be enjoyed as a half-day or full-day tour. We also have the option to combine both, offering two or three hours of "IMAGES TAKEN" followed by a session of "TAKING IMAGES" (or vice versa). Both tours will be led by a specialist curator in Cuban art and an experienced Cuban professional photographer.
                             </p>
         
-                            <a href="./contactoenglish.html" class="button">Contact Us</a>
+                            <a href="/contactoenglish" class="button">Contact Us</a>
                         </div>
                     </div>
                 </section>

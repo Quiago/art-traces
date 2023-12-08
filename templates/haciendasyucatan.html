@@ -11,10 +11,10 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/styles.css')}}">
 
         
 
@@ -32,37 +32,37 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link ">
+                            <a href="/" class="nav__link ">
                                 INICIO
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./destinocuba.html" class="nav__link">
+                            <a href="/destinocuba" class="nav__link">
                                 DESTINO CUBA
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./destinomexico.html" class="nav__link active-link">
+                            <a href="/destinomexico" class="nav__link active-link">
                                 DESTINO YUCATÁN
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./indexgaleria.html" class="nav__link">
+                            <a href="/indexgaleria" class="nav__link">
                                 GALERÍA
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./contacto.html" class="nav__link">
+                            <a href="/contacto" class="nav__link">
                                 TRIP REQUEST
                             </a>
                         </li>
                     </ul>
                     <br><br><br><br>
-                    <a href="./haciendasyucatanenglish.html" class="button">
+                    <a href="/haciendasyucatanenglish" class="button">
                         English
                     </a>
 
@@ -126,7 +126,7 @@
                             El mejor testimonio de aquellos años de bonanza son las haciendas de Yucatán, verdaderos palacios establecidos por los dueños de las plantaciones. Y aunque las innovaciones tecnológicas y las revoluciones dieron por finalizado ese periodo de riqueza, provocando el abandono de muchas de estas haciendas, muchas de ellas han renacido en el siglo XXI para ofrecer una experiencia de lujo absoluto.
                         </p>
 
-                        <a href="./contacto.html" class="button">Contáctenos</a>
+                        <a href="/contacto" class="button">Contáctenos</a>
                     </div>
                 </div>
             </section>

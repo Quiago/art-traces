@@ -11,10 +11,10 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/{{url_for('assets', path='/css/styles.css')}}">
 
         <title> Art Traces | Yucatán </title>
     </head>
@@ -30,37 +30,37 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link">
+                            <a href="/" class="nav__link">
                                 INICIO
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./destinocuba.html" class="nav__link">
+                            <a href="/destinocuba" class="nav__link">
                                 DESTINO CUBA
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./destinomexico.html" class="nav__link active-link">
+                            <a href="/destinomexico" class="nav__link active-link">
                                 DESTINO YUCATÁN
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./indexgaleria.html" class="nav__link">
+                            <a href="/indexgaleria" class="nav__link">
                                 GALERÍA
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="./contacto.html" class="nav__link">
+                            <a href="/contacto" class="nav__link">
                                 TRIP REQUEST
                             </a>
                         </li>
                     </ul>
                     <br><br><br><br>
-                    <a href="./destinomexicoenglish.html" class="button">
+                    <a href="/destinomexicoenglish" class="button">
                         English
                     </a>
 
@@ -86,7 +86,7 @@
                     <div class="home__data">
                         <span class="home__data-subtitle">Disfruta</span>
                         <h1 class="home__data-title">De las <br> Maravillas <b>Culturales <br> De México</b></h1>
-                        <a href="./contacto.html" class="home__button button">Contáctenos</a>
+                        <a href="/contacto" class="home__button button">Contáctenos</a>
                         <a href="#itinerarios" class="home__button button">Ejemplo de Itinerarios</a>
 
                     </div>
@@ -118,7 +118,7 @@
                             Descubre la magia de Yucatán, uno de los estados más atractivos de México. Entre el mar Caribe y el azul turquesa del Golfo de México, con playas paradisíacas, imprescindibles sitios arqueológicos, tradiciones vibrantes y una deliciosa gastronomía , la Península de Yucatán es el destino perfecto para combinar turismo cultural y de aventuras en cualquier época del año. Conocido por su rica historia y cultura, Yucatán cuenta con algunos de los lugares más importantes del mundo. Chichén Itzá, Uxmal y Ek Balam, son el top 3 de las más de 18 zonas arqueológicas donde sentir la energía ancestral de la cultura maya. Hermosas haciendas henequeneras narran la historia colonial de la región trazando una línea de tiempo que enlaza pueblos mágicos, románticas ciudades, comunidades indígenas, casonas exuberantes y una arquitectura moderna que sobrecoge por el respeto a la tradición y la maestría en el diseño de sus espacios . Cada rincón de Yucatán posee la poesía que te transportará a tiempos pasados.Mérida, capital del estado, te sorprenderá con una mezcla de modernidad y tradiciones que le han valido el nombre de Capital Cultural del Sureste por su vibrante escena artística, sus hoteles boutiques, la calidez de sus pobladores y una cocina contemporánea que fusiona recetas patrimoniales con la modernidad gastronómica.
                         </p>
 
-                        <a href="/contacto.html" class="button">Contáctenos</a>
+                        <a href="/contacto" class="button">Contáctenos</a>
                     </div>
                 </div>
             </section>
@@ -137,7 +137,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Arte</h3>
-                                <a href="./arteyucatan.html" class="projects__button button">
+                                <a href="/arteyucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -151,7 +151,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Arquitectura</h3>
-                                <a href="./arquitecturayucatan.html" class="projects__button button">
+                                <a href="/arquitecturayucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -165,7 +165,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Bienestar</h3>
-                                <a href="./bienestaryucatan.html" class="projects__button button">
+                                <a href="/bienestaryucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -179,7 +179,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Cenotes</h3>
-                                <a href="./cenotesyucatan.html" class="projects__button button">
+                                <a href="/cenotesyucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -193,7 +193,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Haciendas</h3>
-                                <a href="./haciendasyucatan.html" class="projects__button button">
+                                <a href="/haciendasyucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -207,7 +207,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Gastronomia</h3>
-                                <a href="./gastronomiayucatan.html" class="projects__button button">
+                                <a href="/gastronomiayucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -221,7 +221,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Vida Nocturna</h3>
-                                <a href="./vidanocturnayucatan.html" class="projects__button button">
+                                <a href="/vidanocturnayucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -235,7 +235,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">Ecoturismo</h3>
-                                <a href="./ecoturismoyucatan.html" class="projects__button button">
+                                <a href="/ecoturismoyucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
@@ -249,7 +249,7 @@
                             <div>
                                 <span class="projects__subtitles">Experiencia de</span>
                                 <h3 class="projects__title">People to people</h3>
-                                <a href="./peopleyucatan.html" class="projects__button button">
+                                <a href="/peopleyucatan" class="projects__button button">
                                     Leer Más <i class="ri-arrow-right-line"></i>
                                 </a>
                             </div>
