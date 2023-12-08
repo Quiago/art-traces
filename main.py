@@ -26,6 +26,10 @@ async def root(request: Request):
 async def root(request: Request):
     return templates.TemplateResponse("destinomexico.html", {"request": request})
 
+@app.get("/contacto", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("contacto.html", {"request": request})
+
 @app.get("/blogs/{id_blog}", tags=["blogs"])
 async def root(request: Request, id_blog:str):
 
