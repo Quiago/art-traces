@@ -7,7 +7,6 @@ from utils.email import send_email
 
 
 
-
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 templates = Jinja2Templates(directory="templates")
