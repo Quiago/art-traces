@@ -76,3 +76,5 @@ Fecha de Retorno: {end_date}
 Intereses": {experiences}"""
     result = send_email(destinatario, asunto, mensaje)
     return JSONResponse(content=result, status_code=201)
+
+from scipy.cluster.hierarchy
