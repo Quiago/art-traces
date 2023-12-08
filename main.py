@@ -185,7 +185,7 @@ async def root(request: Request, id_blog:str):
     print(content)
     return templates.TemplateResponse("blog.html", {"request": request, "content": content})
 
-@app.post("/sendform", tags=["inicio"])
+@app.post("/sendform", tags=["contacto"])
 async def form(name: str = Form(min_length=1, max_length=100), age: int = Form(ge=0, le=100), 
                email: EmailStr = Form(...), person_number: int = Form(ge=0, le=50), adult_number: int = Form(ge=0, le=50),
                children_number: int = Form(ge=0, le=50), destiny: str = Form(min_length=1, max_length=100), duration: int = Form(ge=0, le=50),
