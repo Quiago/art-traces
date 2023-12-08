@@ -111,60 +111,60 @@
                         <div class="contact__content">
                             <h3 class="contact__title">Fill out your request</h3>
         
-                            <form action="" class="contact__form" method="POST">
+                            <form action="/sendform" class="contact__form" method="POST">
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Full Name</label>
-                                    <input type="text" name='nombre' placeholder="Enter your full name" class="contact__form-input" required>
+                                    <input name="name" id="name" type="text" placeholder="Enter your full name" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Age</label>
-                                    <input type="number" name='number'placeholder="Age of the person making the reservation" class="contact__form-input" required>
+                                    <input name="age" id="age" type="number" placeholder="Age of the person making the reservation" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Email</label>
-                                    <input type="email" name='email' placeholder="Enter your Email" class="contact__form-input" required>
+                                    <input name="email" id="email"  type="email" placeholder="Enter your Email" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Total persons</label>
-                                    <input type="number" placeholder="Total number of persons" class="contact__form-input" required>
+                                    <input  name="person_number" id="person_number" type="number" placeholder="Total number of persons" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Total adults</label>
-                                    <input type="number" placeholder="Total number of adults" class="contact__form-input" required>
+                                    <input name="adult_number" id="adult_number" type="number" placeholder="Total number of adults" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Total children</label>
-                                    <input type="number" placeholder="Total number of children" class="contact__form-input" required>
+                                    <input name="children_number" id="children_number" type="number" placeholder="Total number of children" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Destinations</label>
-                                    <input type="email" name='email' placeholder="Include City or place as applicable" class="contact__form-input" required>
+                                    <input name="destiny" id="destiny" type="text" placeholder="Include City or place as applicable" class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Travel duration in days</label>
-                                    <input type="number" placeholder="Example: 3, 5, 7 or 9 days" value=""  class="contact__form-input" required>
+                                    <input name="duration" id="duration" type="number" placeholder="Example: 3, 5, 7 or 9 days" value=""  class="contact__form-input" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Travel start date</label>
-                                    <input type="date"  class="contact__form-input" value="" required>
+                                    <input name="start_date" id="start_date" type="date"  class="contact__form-input" value="" required>
                                 </div>
         
                                 <div class="contact__form-div">
                                     <label for="" class="contact__form-tag">Travel end date</label>
-                                    <input type="date" class="contact__form-input" value="" required>
+                                    <input name="end_date" id="end_date" type="date" class="contact__form-input" value="" required>
                                 </div>
         
                                 <div class="contact__form-div contact__form-area">
                                     <label for="" class="contact__form-tag">Interests</label>
-                                    <textarea name="" mencols="30" rows="10" placeholder="Select the experiences you are interested in from what we offer" class="contact__form-input"></textarea>
+                                    <textarea name="experiences" id="experiences" mencols="30" rows="10" placeholder="Select the experiences you are interested in from what we offer" class="contact__form-input"></textarea>
                                 </div>
         
                                 <input type="submit" value="Submit Form" class="button"></input>
