@@ -186,7 +186,7 @@ async def root(request: Request, id_blog:str):
     return templates.TemplateResponse("blog.html", {"request": request, "content": content})
 
 @app.post("/sendform", tags=["contacto"])
-async def form(name: str = Form(...,min_length=1, max_length=100), age: int = Form(...,ge=0, le=100), 
+async def form(request : Request, name: str = Form(...,min_length=1, max_length=100), age: int = Form(...,ge=0, le=100), 
                email: EmailStr = Form(...), person_number: int = Form(...,ge=0, le=50), adult_number: int = Form(...,ge=0, le=50),
                children_number: int = Form(...,ge=0, le=50), destiny: str = Form(...,min_length=1, max_length=100), duration: int = Form(...,ge=0, le=50),
                start_date: str = Form(...), end_date:str = Form(...), experiences:str = Form(...,min_length=1, max_length=300),
@@ -220,4 +220,43 @@ Fecha de Ida: {start_date}
 Fecha de Retorno: {end_date}
 Intereses": {experiences}"""
     result = send_email(destinatario, asunto, mensaje)
-    return JSONResponse(content=result, status_code=201)
+    if result == "Correo enviado exitosamente":
+        return templates.TemplateResponse("warning.html", {"request": request})
+
+@app.post("/sendformenglish", tags=["contacto"])
+async def form(request : Request, name: str = Form(...,min_length=1, max_length=100), age: int = Form(...,ge=0, le=100), 
+               email: EmailStr = Form(...), person_number: int = Form(...,ge=0, le=50), adult_number: int = Form(...,ge=0, le=50),
+               children_number: int = Form(...,ge=0, le=50), destiny: str = Form(...,min_length=1, max_length=100), duration: int = Form(...,ge=0, le=50),
+               start_date: str = Form(...), end_date:str = Form(...), experiences:str = Form(...,min_length=1, max_length=300),
+               ):
+    
+    datos = { "name" : name, 
+            "age": age, 
+               "email": email, 
+               "person_number": person_number ,
+               "adult_number": adult_number,
+               "children_number": children_number, 
+               "destiny": destiny,
+               "duration": duration,
+               "start_date": start_date, 
+               "end_date": end_date, 
+               "experiences": experiences
+               }
+
+    destinatario = "danielsierraperera07@gmail.com"
+    asunto = "Art Traces Reservation"
+    mensaje = f"""Los datos de la reservación son los siguientes:
+Nombre: {name}
+Edad: {age}
+Correo Electrónico: {email}
+Cantidad de personas: {person_number}
+Cantidad de adultos: {adult_number}
+Cantidad de menores de edad: {children_number}
+Destino: {destiny}
+Duración: {duration}
+Fecha de Ida: {start_date}
+Fecha de Retorno: {end_date}
+Intereses": {experiences}"""
+    result = send_email(destinatario, asunto, mensaje)
+    if result == "Correo enviado exitosamente":
+        return templates.TemplateResponse("warningenglish.html", {"request": request})

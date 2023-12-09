@@ -27,7 +27,7 @@ def send_email(to, subject, message):
         # Envía el correo.
         server.sendmail(sender_email, to, msg.as_string())
         server.quit()
-        return {"message": "Correo enviado exitosamente"}
+        return "Correo enviado exitosamente"
 
     except Exception as e:
         return {"message": f"Error al enviar el correo: {str(e)}"}
