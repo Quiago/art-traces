@@ -193,14 +193,19 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
                start_date: str = Form(...), end_date:str = Form(...), experiences:str = Form(...)
                ):
     
-    try:
-        formulario = Formulario(name, age, email, person_number,
-                   adult_number, children_number, destiny, duration,
-                   start_date, end_date, experiences
-                    )
-        destinatario = "danielsierraperera07@gmail.com"
-        asunto = "Art Traces Reservation"
-        mensaje = f"""Los datos de la reservación son los siguientes:
+    try:   
+        formulario = Formulario(**{"name": name, "age":age, "email":email, 
+                                   "person_number": person_number, "adult_number": adult_number,
+                                    "children_number": children_number, "destiny": destiny, 
+                                    "duration": duration, "start_date": start_date, 
+                                    "end_date": end_date, "experiences": experiences})
+
+    except ValidationError as e:
+        return templates.TemplateResponse("error.html", {"request": request, "errors": e.errors()})
+    
+    destinatario = "danielsierraperera07@gmail.com"
+    asunto = "Art Traces Reservation"
+    mensaje = f"""Los datos de la reservación son los siguientes:
     Nombre: {name}
     Edad: {age}
     Correo Electrónico: {email}
@@ -212,14 +217,11 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
     Fecha de Ida: {start_date}
     Fecha de Retorno: {end_date}
     Intereses": {experiences}"""
-        result = send_email(destinatario, asunto, mensaje)
-        if result == "Correo enviado exitosamente":
-            return templates.TemplateResponse("warning.html", {"request": request})
-        else: 
-            return JSONResponse("Error al enviar el correo", status_code=400)
-    except ValidationError as e:
-        return templates.TemplateResponse("error.html", {"request": request, "errors": e.errors()})
-    
+    result = send_email(destinatario, asunto, mensaje)
+    if result == "Correo enviado exitosamente":
+        return templates.TemplateResponse("warning.html", {"request": request})
+    else: 
+        return JSONResponse("Error al enviar el correo", status_code=400)
 
 @app.post("/sendformenglish", tags=["contacto"])
 async def form(request : Request, name: str = Form(...), age: int = Form(...), 
@@ -228,14 +230,19 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
                start_date: str = Form(...), end_date:str = Form(...), experiences:str = Form(...)
                ):
     
-    try:
-        formulario = Formulario(name, age, email, person_number,
-                   adult_number, children_number, destiny, duration,
-                   start_date, end_date, experiences
-                    )
-        destinatario = "danielsierraperera07@gmail.com"
-        asunto = "Art Traces Reservation"
-        mensaje = f"""Los datos de la reservación son los siguientes:
+    try:   
+        formulario = Formulario(**{"name": name, "age":age, "email":email, 
+                                   "person_number": person_number, "adult_number": adult_number,
+                                    "children_number": children_number, "destiny": destiny, 
+                                    "duration": duration, "start_date": start_date, 
+                                    "end_date": end_date, "experiences": experiences})
+ 
+    except ValidationError as e:
+        return templates.TemplateResponse("errorenglish.html", {"request": request, "errors": e.errors()})
+    
+    destinatario = "danielsierraperera07@gmail.com"
+    asunto = "Art Traces Reservation"
+    mensaje = f"""Los datos de la reservación son los siguientes:
     Nombre: {name}
     Edad: {age}
     Correo Electrónico: {email}
@@ -247,10 +254,8 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
     Fecha de Ida: {start_date}
     Fecha de Retorno: {end_date}
     Intereses": {experiences}"""
-        result = send_email(destinatario, asunto, mensaje)
-        if result == "Correo enviado exitosamente":
-            return templates.TemplateResponse("warning.html", {"request": request})
-        else: 
-            return JSONResponse("Error al enviar el correo", status_code=400)
-    except ValidationError as e:
-        return templates.TemplateResponse("errorenglish.html", {"request": request, "errors": e.errors()})
+    result = send_email(destinatario, asunto, mensaje)
+    if result == "Correo enviado exitosamente":
+        return templates.TemplateResponse("warningenglish.html", {"request": request})
+    else: 
+        return JSONResponse("Error al enviar el correo", status_code=400)

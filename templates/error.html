@@ -22,13 +22,14 @@
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Error en el Formulario</h5>
+                
                 {% for error in errors %}
                 <p class="card-text">
                     Error en el campo: {{error["loc"][0]}}:
                     {{error["msg"]}}
                 </p>
                 {% endfor %}
-                <a href="/" class="home__button button">Volver a Inicio</a>
+                <a href="/contacto" class="home__button button">Volver al Formulario</a>
             </div>
         </div>
         

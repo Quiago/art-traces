@@ -3,8 +3,9 @@ from typing import Optional
 
 
 class Formulario(BaseModel):
+
     name: str = Field(min_length=1)
-    age: str = Field(min_length=1)
+    age: int = Field(ge=1, le=100)
     email: EmailStr = Field(min_length=1)
     person_number: int = Field(ge=1, le=100)
     adult_number: int = Field(ge=1, le=100)
