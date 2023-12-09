@@ -146,12 +146,6 @@ img {
   color: var(--title-color);
 }
 
-.card{
-  margin: auto;
-  top: 10rem;
-  background: var(--body-color);
-}
-
 /*=============== HEADER===============*/
 .header {
   width: 100%;
