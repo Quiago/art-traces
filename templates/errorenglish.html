@@ -24,9 +24,10 @@
                 <h5 class="card-title">Form error</h5>
                 {% for error in errors %}
                 <p class="card-text">
-                    Error in the field: {{error["loc"][0]}}:
-                    {{error["msg"]}}
+                    Error filling out the contact form:
                 </p>
+                <br>
+                <p>{{error["loc"][0]}}:{{error["msg"]}}</p>
                 {% endfor %}
                 <a href="/contactoenglish" class="home__button button">Back to Contact Form</a>
             </div>

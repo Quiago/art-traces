@@ -203,7 +203,7 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
     except ValidationError as e:
         return templates.TemplateResponse("error.html", {"request": request, "errors": e.errors()})
     
-    destinatario = "danielsierraperera07@gmail.com"
+    destinatario = "info@arttraces.net"
     asunto = "Art Traces Reservation"
     mensaje = f"""Los datos de la reservación son los siguientes:
     Nombre: {name}
@@ -240,7 +240,7 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
     except ValidationError as e:
         return templates.TemplateResponse("errorenglish.html", {"request": request, "errors": e.errors()})
     
-    destinatario = "danielsierraperera07@gmail.com"
+    destinatario = "info@arttraces.net"
     asunto = "Art Traces Reservation"
     mensaje = f"""Los datos de la reservación son los siguientes:
     Nombre: {name}
