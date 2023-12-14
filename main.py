@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, Form
+from fastapi import FastAPI, Request, Form, Response
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse
@@ -259,3 +259,211 @@ async def form(request : Request, name: str = Form(...), age: int = Form(...),
         return templates.TemplateResponse("warningenglish.html", {"request": request})
     else: 
         return JSONResponse("Error al enviar el correo", status_code=400)
+    
+@app.get("sitemap.xml", tags=["google"])
+async def google(request: Request):
+    data = """<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://www.arttraces.net/</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/destinocuba</loc>
+  <priority>0.2</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/destinomexico</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/indexgaleria</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/contacto</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/main</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/destinocubaenglish</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/artecuba</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arquitecturacuba</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/fotografiacuba</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/religioncuba</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/shoppingcuba</loc>
+  <priority>0.4</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/destinomexicoenglish</loc>
+  <priority>0.2</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arteyucatan</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arquitecturayucatan</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/bienestaryucatan</loc>
+  <priority>0.2</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/cenotesyucatan</loc>
+  <priority>0.3</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/haciendasyucatan</loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/gastronomiayucatan</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/vidanocturnayucatan</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/ecoturismoyucatan</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/peopleyucatan</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc></loc>
+  <priority>0.1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/contactoenglish</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/indexgaleriaenglish</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/artecubaenglish</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arquitecturacubaenglish</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/fotografiacubaenglish</loc>
+  <priority>0.4</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/religioncubaenglish</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/shoppingcubaenglish</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/assets/galeria/indexgaleria</loc>
+  <priority>0.4</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arteyucatanenglish</loc>
+  <priority>0.4</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/arquitecturayucatanenglish</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/bienestaryucatanenglish</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/cenotesyucatanenglish</loc>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/haciendasyucatanenglish</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/gastronomiayucatanenglish</loc>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/vidanocturnayucatanenglish</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/ecoturismoyucatanenglish</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.arttraces.net/peopleyucatanenglish</loc>
+  <priority>0.2</priority>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>"""
+    
+    return Response(content=data, media_type="application/xml")
