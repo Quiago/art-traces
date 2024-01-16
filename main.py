@@ -171,6 +171,29 @@ async def root(request: Request):
 async def root(request: Request):
     return templates.TemplateResponse("vidanocturnayucatanenglish.html", {"request": request})
 
+@app.get("/1", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("1.html", {"request": request})
+
+@app.get("/1english", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("1english.html", {"request": request})
+
+@app.get("/2", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("2.html", {"request": request})
+
+@app.get("/3", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("3.html", {"request": request})
+
+@app.get("/3english", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("3english.html", {"request": request})
+
+@app.get("/blogenglish", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("blogenglish.html", {"request": request})
 
 @app.get("/blogs/{id_blog}", tags=["blogs"])
 async def root(request: Request, id_blog:str):

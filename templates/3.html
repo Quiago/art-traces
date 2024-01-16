@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/assets/img/4.svg" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
+
+    <title>Una escultura habitable en la selva yucateca.</title>
+</head>
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                <div class="nav__logo_text">ART - TRACES</div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link ">
+                            INICIO
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/destinocuba" class="nav__link">
+                            DESTINO CUBA
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/destinomexico" class="nav__link active-link">
+                            DESTINO YUCATÁN
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/assets/galeria/indexgaleria" class="nav__link">
+                            GALERÍA
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/contacto" class="nav__link">
+                            TRIP REQUEST
+                        </a>
+                    </li>
+                </ul>
+                <br><br><br><br>
+                <a href="/3english" class="button">
+                    English
+                </a>
+
+                <i class="bx bx-x nav__close" id="nav-close"></i>
+            </div>
+
+            
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <img src="https://i.postimg.cc/Dz2c1y19/3-2.jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__data-title">Tour <br> de Arte</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== BLOG CONTENT ===============-->
+        <section class="section">
+            <p class="blog__content">
+                Mérida es una ciudad donde la cultura está en el aire y se puede disfrutar de eventos y actividades los 365 días del año. Muchísimas galerías, centros culturales, teatros e incluso restaurantes y hoteles organizan proyectos y exposiciones que dotan de color a cada esquina de la Ciudad Blanca, la cual posee el privilegio de ser la única ciudad reconocida en dos ocasiones como Capital iberoamericana de la Cultura y a la cual cientos de creadores mexicanos y extranjeros, emergentes o internacionalmente reconocidos han elegido como su hogar. <br>
+
+                Art Traces le ofrece la oportunidad de visitar a los artistas en sus propios estudios, interactuar con ellos y descubrir de primera mano los conceptos escondidos en sus obras como una experiencia única que, más allá del disfrute estético, implica la comprensión de México, su historia y su cultura desde esa mirada inclusiva que solo el arte es capaz de ofrecer. <br>
+
+                Nuestros guías y asesores son curadores con reconocida trayectoria profesional. Son ellos quienes seleccionan a los artistas contemporáneos más importantes para ser visitados. Sin embargo, usted lo desea, podemos visitar a un artista no incluido en nuestra selección. <br>
+
+                Contáctenos para organizarle un itinerario a la medida de sus tiempos, sus preferencias y sus expectativas. Puede elegir desde medio día visitando estudios de artistas hasta un día completo o un itinerario totalmente enfocado en arte y cultura, cócteles o cenas privadas en estudios de arte, talleres con artistas y encuentros con reconocidos curadores y art dealers que le harán descubrir la vibrante escena del arte contemporáneo en Yucatán. <br>
+
+                <br>Opciones de recorridos <br>
+
+                - Medio día (de 10:00 a 13:00 o de 14:30 a 17:30) Incluye entre 3 y 4 estudios de artistas <br>
+
+                - Tour de arte de un día (de 10:00 am a 5:00 pm) Incluye visitas a estudios de artistas, proyectos culturales y visitas guiadas totalmente privadas a las más importantes galerías o exposiciones que se muestren en la ciudad en el momento de su visita. <br>
+
+                - Horarios a medida (más de un día) <br>
+                Indicado para coleccionistas o profesionales del arte y se organiza de acuerdo a las expectativas de cada grupo o cliente individual.
+
+
+            </p>
+        </section>
+
+        <!--=============== BLOG Galeria ===============-->
+        
+        <div class="wrapper">
+                <i class='bx bx-left-arrow-alt button' id="prev"></i>
+                <div class="image-container">
+                  <div class="carousel">
+                    <img src="https://i.postimg.cc/KYNJWgZc/3-1.jpg" alt="" />
+                    <img src="https://i.postimg.cc/Dz2c1y19/3-2.jpg" alt="" />
+                    <img src="https://i.postimg.cc/05LFDDjh/3-3.jpg" alt="" />
+                    <img src="https://i.postimg.cc/wTLPVMsM/3-4.jpg" alt="" />
+                    <img src="https://i.postimg.cc/hjtpRPjL/3-5.jpg" alt="" />
+                  </div>
+                  <i class='bx bx-right-arrow-alt button' id="next"></i>
+                </div>
+        </div>
+        <br><br>
+        
+        
+    </main>
+    
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+
+            <div class="footer__logo">
+                <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                <h1 class="footer__title">Art Traces</h1>
+            </div>
+
+            <ul class="footer__social">
+                
+
+                <a href="https://www.instagram.com/arttracestravel/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Art Traces. Todos los derechos reservados
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== Destinos JS ===============-->
+    <script src="/assets/js/destinos.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

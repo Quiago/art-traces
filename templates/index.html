@@ -7,7 +7,7 @@
         <meta name="keywords" content="Turismo, Arte, Experiencias">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="{{url_for('assets', path='/img/4.svg')}}" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,10 +21,12 @@
         <title> Art Traces | Inicio </title>
     </head>
     <body>
+
         <div itemscope itemtype="https://schema.org/WebSite">
             <meta itemprop="url" content="https://arttraces.net/"/>
             <meta itemprop="name" content="Art Traces"/>
         </div>
+
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -60,7 +62,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">
+                            <a href="/blog" class="nav__link">
                                 BLOG
                             </a>
                         </li>
@@ -72,7 +74,7 @@
                         </li>
                     </ul>
                     <br><br><br><br>
-                    <a href="/main" class="button">
+                    <a href="/indexenglish" class="button">
                         English
                     </a>
 
@@ -94,6 +96,7 @@
             <section class="home" id="home">
                 <img src="https://i.postimg.cc/FzBBvqjW/shutterstock-1993982009.jpg" alt="" class="home__img">
                 
+                
                 <div class="home__container container grid">
                     <div class="home__data">
                         <span class="home__data-subtitle">Descubre tu lugar</span>
@@ -103,11 +106,15 @@
                     </div>
 
                     <div class="home__social">
-                        
-                        <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="home__social-link">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
                             <i class='bx bxl-instagram'></i>
                         </a>
-                        
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
                     </div>
 
                 </div>
@@ -982,100 +989,7 @@
                 </div>
             </section>
 
-            <!--=============== BLOGS ===============
-            <section class="work section" id="work">
-                <span class="section__subtitle">Compartimos informacion útil en</span>
-                <h2 class="section__title">Nuestro Blog</h2>
-
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all">Todos</span>
-                    <span class="work__item" data-filter=".recientes">Mas Recientes</span>
-                    
-                </div>
-
-                <div class="work__container container grid">
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Chichen Itzá</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Valladolid</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Cenote</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Mérida</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Celestún</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Río Lagartos</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Sisal</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Izamal</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-                </div>
-            </section>-->
-
+            
             <br><br><br>
         </main>
 
@@ -1089,13 +1003,17 @@
                 </div>
 
                 <ul class="footer__social">
-                    
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
 
-                    <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="footer__social-link">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-instagram'></i>
                     </a>
 
-                    
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
                 </ul>
 
                 <span class="footer__copy">
