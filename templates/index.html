@@ -7,7 +7,7 @@
         <meta name="keywords" content="Turismo, Arte, Experiencias">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="{{url_for('assets', path='/img/4.svg')}}" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,10 +21,12 @@
         <title> Art Traces | Inicio </title>
     </head>
     <body>
+
         <div itemscope itemtype="https://schema.org/WebSite">
             <meta itemprop="url" content="https://arttraces.net/"/>
             <meta itemprop="name" content="Art Traces"/>
         </div>
+
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -60,7 +62,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">
+                            <a href="/blog" class="nav__link">
                                 BLOG
                             </a>
                         </li>
@@ -72,7 +74,7 @@
                         </li>
                     </ul>
                     <br><br><br><br>
-                    <a href="/main" class="button">
+                    <a href="/blog" class="button">
                         English
                     </a>
 
@@ -94,6 +96,7 @@
             <section class="home" id="home">
                 <img src="https://i.postimg.cc/FzBBvqjW/shutterstock-1993982009.jpg" alt="" class="home__img">
                 
+                
                 <div class="home__container container grid">
                     <div class="home__data">
                         <span class="home__data-subtitle">Descubre tu lugar</span>
@@ -103,11 +106,15 @@
                     </div>
 
                     <div class="home__social">
-                        
-                        <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="home__social-link">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
                             <i class='bx bxl-instagram'></i>
                         </a>
-                        
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
                     </div>
 
                 </div>
@@ -119,7 +126,7 @@
                 <h2 class="section__title">Sobre Nosotros</h2>
 
                 <div class="about__container container grid">
-                    <img src="/assets/img/4.svg" alt="" class="about__img">
+                    <img src="/assets/img/Logo_fondo_negro_marco_circular-transformed.svg" alt="" class="about__img">
 
                     <div class="about__data">
                         <p class="about__description">
@@ -148,7 +155,7 @@
 
             <!--=============== EXPERIENCIAS ===============-->
             <section class="services section" id="services">
-                <span class="section__subtitle">Disfrute siempre de las mejores</span>
+                <span class="section__subtitle">Disfruta siempre de las mejores</span>
                 <h2 class="section__title">Experiencias</h2>
 
                 <div class="projects__content grid " id="productos">
@@ -317,11 +324,7 @@
 
                                 <h3 class="services__modal-title">Bienestar</h3>
                                 <p class="services__modal-description">
-                                    Bienvenidos a una experiencia de bienestar 
-                                    única, donde podrán desconectar del estrés 
-                                    diario y conectarse con su ser interior, 
-                                    encontrando la armonía y la serenidad que 
-                                    necesitan para rejuvenecer cuerpo y mente.
+                                    Cuando la mente permanece en silencio, el alma habla,  Déjese invadir por los beneficios curativos, cuerpo, mente y alma en armonía natural, retiros wellness, yoga, ceremonia de cacao, ceremonia del agua. Te ofrecemos experiencias únicas para que la energía que emane de tu interior esté en sintonía con el espíritu milenario de la naturaleza que te rodea.
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -359,6 +362,12 @@
                                             Yoga
                                         </p>
                                     </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">
+                                            Retiros Espirituales
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -383,9 +392,7 @@
 
                                 <h3 class="services__modal-title">Cenotes</h3>
                                 <p class="services__modal-description">
-                                    Disfrute esta 
-                                    aventura única llena de maravillas 
-                                    geológicas y experiencias inolvidables
+                                    Los cenotes son formaciones geológicas únicas,  pozos de agua dulce que se encuentran en cuevas subterráneas, donde podrás nadar, bucear y sentirte conectado con la naturaleza de una manera única.
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -473,6 +480,14 @@
 
                                         </p>
                                     </li>
+
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">
+                                            Mucuyché
+
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -497,10 +512,7 @@
 
                                 <h3 class="services__modal-title">Haciendas</h3>
                                 <p class="services__modal-description">
-                                    Sumérgete en la rica herencia cultural
-                                    y la serenidad de estos lugares mientras
-                                    exploras su arquitectura histórica y 
-                                    disfrutas de la hospitalidad local.
+                                    Sumérgete en la rica herencia cultural y la serenidad de estos lugares mientras exploras su arquitectura histórica, así son las haciendas de Yucatán, verdaderos palacios establecidos por los dueños de las plantaciones de Henequén. Las innovaciones tecnológicas y las revoluciones dieron por finalizado ese periodo de riqueza, provocando el abandono de muchas de estas haciendas, muchas de ellas han renacido en el siglo XXI para ofrecer una experiencia de lujo absoluto.
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -570,10 +582,7 @@
 
                                 <h3 class="services__modal-title">Gastronomia</h3>
                                 <p class="services__modal-description">
-                                    Prepárense para embarcarse en 
-                                    un viaje culinario que les 
-                                    transportará a lugares inexplorados
-                                     a través de cada bocado
+                                    Los Sabores de los dioses Mayas. Visitar Yucatán, es hacer un recorrido de colores, olores y sabores, pues la mezcla de los ingredientes utilizados para la creación de los muchos platillos que integran su gastronomía, se convierten en los guías de un recorrido culinario para los amantes de la buena comida.
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -635,10 +644,12 @@
 
                                 <h3 class="services__modal-title">Vida Nocturna</h3>
                                 <p class="services__modal-description">
-                                    Experimenta la vibrante vida nocturna 
-                                    de la ciudad mientras las luces destellan 
-                                    y la música llena el aire, llevándote a 
-                                    un mundo de diversión y emoción.
+                                    Te sorprenderás al descubrir todas las opciones 
+                                    que nos ofrece ésta bella ciudad, Música en vivo en 
+                                    espacios públicos, originales bares, cantinas, antros, 
+                                    fiestas voge,  teatros, y porque no? Vivir una experiencia 
+                                    de exclusividad en un Bar Speak Easy donde solo unos pocos 
+                                    tienen acceso. 
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -670,13 +681,7 @@
                                         </p>
                                     </li>
 
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Lorem ipsum, dolor sit amet 
-                                            consectetur adipisicing elit.
-                                        </p>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -701,12 +706,10 @@
 
                                 <h3 class="services__modal-title">Ecoturismo</h3>
                                 <p class="services__modal-description">
-                                    Sumérgete en la vida salvaje, 
-                                    observa majestuosos animales 
-                                    en su hábitat natural y crea 
-                                    recuerdos inolvidables mientras 
-                                    te conectas con la naturaleza de 
-                                    una manera única.
+                                    Yucatán es un privilegio, pues la selva que rodea prácticamente todos los pueblos y ciudades guarda en sus entrañas cavernas, cenotes, Manglares y gran cantidad de flora y fauna cuyos sonidos te harán olvidar el ruido de las grandes ciudades.
+Bien puedes estar nadando tranquilamente en un cenote rodeado de frondosa vegetación o bien admirar a los hermosos flamencos rosados de Celestún, en la costa oeste de Yucatán.
+En los centros ecológicos de Yucatán hay actividades como el rappel, kayak, senderismo, paseos en bicicleta, así como la observación de aves.
+
                                 </p>
 
                                 <ul class="services__modal-list">
@@ -982,100 +985,7 @@
                 </div>
             </section>
 
-            <!--=============== BLOGS ===============
-            <section class="work section" id="work">
-                <span class="section__subtitle">Compartimos informacion útil en</span>
-                <h2 class="section__title">Nuestro Blog</h2>
-
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all">Todos</span>
-                    <span class="work__item" data-filter=".recientes">Mas Recientes</span>
-                    
-                </div>
-
-                <div class="work__container container grid">
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Chichen Itzá</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Valladolid</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Cenote</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Mérida</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Celestún</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Río Lagartos</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card mix recientes">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Sisal</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                    <div class="work__card">
-                        <img src="https://i.postimg.cc/3RkChtDf/chichen-itza-1025099-1280.jpg" alt="" class="work__img">
-
-                        <h3 class="work__title">Izamal</h3>
-
-                        <a href="#" class="work__button">
-                            Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-                </div>
-            </section>-->
-
+            
             <br><br><br>
         </main>
 
@@ -1089,13 +999,17 @@
                 </div>
 
                 <ul class="footer__social">
-                    
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
 
-                    <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="footer__social-link">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-instagram'></i>
                     </a>
 
-                    
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
                 </ul>
 
                 <span class="footer__copy">
