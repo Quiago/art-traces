@@ -10,7 +10,7 @@ from model import Formulario
 
 app = FastAPI()
 # new version
-app.mount("/assets", StaticFiles(directory="assets"), name="assets")
+app.mount("{{url_for('assets', path='", StaticFiles(directory="assets"), name="assets")
 templates = Jinja2Templates(directory="templates")
 
 
@@ -182,6 +182,10 @@ async def root(request: Request):
 @app.get("/2", tags=["inicio"])
 async def root(request: Request):
     return templates.TemplateResponse("2.html", {"request": request})
+
+@app.get("/2english", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("2english.html", {"request": request})
 
 @app.get("/3", tags=["inicio"])
 async def root(request: Request):
@@ -438,7 +442,7 @@ async def google(request: Request):
       <changefreq>weekly</changefreq>
     </url>
     <url>
-      <loc>https://www.arttraces.net/assets/galeria/indexgaleria</loc>
+      <loc>https://www.arttraces.net{{url_for('assets', path='/galeria/indexgaleria</loc>
       <priority>0.4</priority>
       <changefreq>weekly</changefreq>
     </url>
