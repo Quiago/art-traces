@@ -10,7 +10,7 @@ from model import Formulario
 
 app = FastAPI()
 # new version
-app.mount("{{url_for('assets', path='", StaticFiles(directory="assets"), name="assets")
+app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 templates = Jinja2Templates(directory="templates")
 
 

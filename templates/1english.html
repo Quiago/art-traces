@@ -16,7 +16,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
 
-    <title>Blog</title>
+<title>A Habitable Sculpture in the Yucatan Jungle.</title>
 </head>
 <body>
 
@@ -31,26 +31,26 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="main" class="nav__link ">
-                            INICIO
+                        <a href="/main" class="nav__link ">
+                            HOME
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="/destinocubaenglish" class="nav__link">
-                            DESTINO CUBA
+                            DESTINATION CUBA
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="/destinomexicoenglish" class="nav__link active-link">
-                            DESTINO YUCATÁN
+                            DESTINATION YUCATÁN
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="/indexgaleriaenglish" class="nav__link">
-                            GALERÍA
+                            GALLERY
                         </a>
                     </li>
 
@@ -78,51 +78,54 @@
     </header>
 
     <main class="main">
-        
-        <!--=============== BLOGS ===============-->
-        <section class="work section" id="work">
-            <span class="section__subtitle">Compartimos informacion útil en</span>
-            <h2 class="section__title">Nuestro Blog</h2>
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <img src="https://i.postimg.cc/zv5GXcmk/blog1princiapl.jpg" alt="" class="home__img">
 
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">Todos</span>
-                <span class="work__item" data-filter=".recientes">Mas Recientes</span>
-                
-            </div>
-
-            <div class="work__container container grid">
-                <div class="work__card mix recientes">
-                    <img src="https://i.postimg.cc/zv5GXcmk/blog1princiapl.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Una escultura habitable en la selva <br> yucateca.</h3>
-
-                    <a href="/blogenglish" class="work__button">
-                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix recientes">
-                    <img src="https://i.postimg.cc/PJv9Q3D3/principal-2.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Del mercado popular a la cocina <br>  gourmet: Cocinando con un chef</h3>
-
-                    <a href="/2english" class="work__button">
-                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix recientes">
-                    <img src="https://i.postimg.cc/Dz2c1y19/3-2.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Tour de Arte</h3>
-
-                    <a href="/3english" class="work__button">
-                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
-                    </a>
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__data-title">A habitable sculpture <br> in the Yucatan jungle.</b></h1>
                 </div>
             </div>
         </section>
-        <br><br><br>
+
+        <!--=============== BLOG CONTENT ===============-->
+        <section class="section">
+            <p class="blog__content">
+                A rusty metal gate, no signs, in the middle of nowhere. A long path through the trees, bird chirps, silence... all before the miracle: contemporary Parthenon, Roman palace, naturalistic architecture, monument to meditation, living sculpture. All of this comes to mind when unbelievably observing the work in the middle of the jungle. <br>
+
+                Plantel Matilde is the refuge built by sculptor Javier Marín to host (and dream) his monumental sculpture. His architectural debut. Pure concrete and water, steel and wood... surrounded by water, greenery, and light. <br>
+
+                Immense in its architecture and almost monastic in its conception, visiting Plantel Matilde is an experience that is not forgotten. Time becomes short, and one would wish to stay there forever, enjoying the magical energy that emanates from every corner of the building, from the artist's imposing work. It's like walking inside a sculpture that is both a work and a home. Total peace. <br>
+
+                And as if that were not enough, the artist's work does not stop there. His effort extends to the community, creating jobs, shaping dreams. The Barro de Sac Chich Workshop was conceived during the first artistic residency at Plantel Matilde, as a community meeting place focused on the design, creation, production, and marketing of clay pieces. Today, the Barro de Sac Chich Workshop operates as a laboratory for meeting and collaboration, aiming to learn a trade and generate a fair and equitable work model for participants. <br>
+
+                A visit to Plantel Matilde also includes a visit to the gallery where the Sac Chich clay artisans exhibit their works, savoring a delicious fruit water, taking home one of their pieces as a gift, and getting to know the women and men who create ceramic dreams with their hands every day. <br>
+
+                Still want more? Enjoy an incredible lunch organized by the locals in a beautiful hacienda.
+            </p>
+        </section>
+
+        <!--=============== BLOG Gallery ===============-->
+        
+        <div class="wrapper">
+                <i class='bx bx-left-arrow-alt button' id="prev"></i>
+                <div class="image-container">
+                  <div class="carousel">
+                    <img src="https://i.postimg.cc/xjydFnHp/blog1.1.jpg" alt="" />
+                    <img src="https://i.postimg.cc/tJt73Hdf/blog1.2.jpg" alt="" />
+                    <img src="https://i.postimg.cc/jdMStcMz/blog1.3.jpg" alt="" />
+                    <img src="https://i.postimg.cc/dtsVbpjs/blog1.4.jpg" alt="" />
+                    <img src="https://i.postimg.cc/FzNKJL8B/blog1.5.jpg" alt="" />
+                    <img src="https://i.postimg.cc/FzvsMLxx/blog1.6.jpg" alt="" />
+                    <img src="https://i.postimg.cc/XYq7639t/blog1.7.jpg" alt="" />
+                    <img src="https://i.postimg.cc/yY6d10FJ/blog1.8.jpg" alt="" />
+                  </div>
+                  <i class='bx bx-right-arrow-alt button' id="next"></i>
+                </div>
+        </div>
+        <br><br>
+        
         
     </main>
     
@@ -144,21 +147,21 @@
             </ul>
 
             <span class="footer__copy">
-                &#169; Art Traces. Todos los derechos reservados
+                &#169; Art Traces. All rights reserved.
             </span>
         </div>
     </footer>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{url_for('assets', path='/js/scrollreveal.min.js'}}"></script>
+    <script src="{{url_for('assets', path='/js/scrollreveal.min.js')}}"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="{{url_for('assets', path='/js/swiper-bundle.min.js'}}"></script>
+    <script src="{{url_for('assets', path='/js/swiper-bundle.min.js')}}"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src="{{url_for('assets', path='/js/mixitup.min.js'}}"></script>
+    <script src="{{url_for('assets', path='/js/mixitup.min.js')}}"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="{{url_for('assets', path='/js/main.js'}}"></script>
+    <script src="{{url_for('assets', path='/js/main.js')}}"></script>
 </body>
 </html>
