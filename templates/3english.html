@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="/assets/img/Logo_fondo_negro_marco_circular-transformed.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="{{url_for('assets', path='/img/Logo_fondo_negro_marco_circular-transformed.svg')}}" type="image/x-icon">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,31 +31,31 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="/" class="nav__link ">
+                        <a href="/main" class="nav__link ">
                             HOME
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="/destinocuba" class="nav__link">
+                        <a href="/destinocubaenglish" class="nav__link">
                             DESTINATION CUBA
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="/destinomexico" class="nav__link active-link">
+                        <a href="/destinomexicoenglish" class="nav__link active-link">
                             DESTINATION YUCATÁN
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="/assets/galeria/indexgaleria" class="nav__link">
+                        <a href="/indexgaleriaenglish" class="nav__link">
                             GALLERY
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="/contacto" class="nav__link">
+                        <a href="/contactoenglish" class="nav__link">
                             TRIP REQUEST
                         </a>
                     </li>
@@ -144,9 +144,9 @@
     </footer>
 
     <!--=============== Destinations JS ===============-->
-    <script src="/assets/js/destinos.js"></script>
+    <script src="{{url_for('assets', path='/js/destinos.js'}}"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="/assets/js/main.js"></script>
+    <script src="{{url_for('assets', path='/js/main.js'}}"></script>
 </body>
 </html>
