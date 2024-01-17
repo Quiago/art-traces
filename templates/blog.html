@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="{{url_for('assets', path='/img/Logo_fondo_negro_marco_circular-transformed.svg'}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{url_for('assets', path='/img/Logo_fondo_negro_marco_circular-transformed.svg')}}" type="image/x-icon">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -25,48 +25,50 @@
         <nav class="nav container">
             <div class="nav__logo">
                 <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                <div class="nav__logo_text">ART - TRACES</div>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            Inicio
+                        <a href="/main" class="nav__link ">
+                            INICIO
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="/destinocuba" class="nav__link">
-                            Destino Cuba
+                            DESTINO CUBA
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="/destinomexico" class="nav__link">
-                            Destino Yucatán
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="/contacto" class="nav__link">
-                            Contactos
+                        <a href="/destinomexico" class="nav__link active-link">
+                            DESTINO YUCATÁN
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="/indexgaleria" class="nav__link">
-                            Galería
+                            GALERÍA
                         </a>
                     </li>
 
+                    <li class="nav__item">
+                        <a href="/contacto" class="nav__link">
+                            TRIP REQUEST
+                        </a>
+                    </li>
                 </ul>
+                <br><br><br><br>
+                <a href="/blogenglish" class="button">
+                    English
+                </a>
 
                 <i class="bx bx-x nav__close" id="nav-close"></i>
             </div>
 
-            <a href="/blogenglish" class="button">
-                English
-            </a>
+            
             
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
@@ -76,57 +78,69 @@
     </header>
 
     <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home" id="home">
-            <img src="https://i.postimg.cc/2jgKyppm/pexels-axp-photography-16716973.jpg" alt="" class="home__img">
+        
+        <!--=============== BLOGS ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">Compartimos informacion útil en</span>
+            <h2 class="section__title">Nuestro Blog</h2>
 
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__data-subtitle">Disfrute</span>
-                    <h1 class="home__data-title">La majestuosidad  <br> del <b>Capitolio <br> Habanero</b></h1>
-                    <a href="#contact" class="home__button button">Contáctenos</a>
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">Todos</span>
+                <span class="work__item" data-filter=".recientes">Mas Recientes</span>
+                
+            </div>
 
+            <div class="work__container container grid">
+                <div class="work__card mix recientes">
+                    <img src="https://i.postimg.cc/zv5GXcmk/blog1princiapl.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Una escultura habitable en la selva <br> yucateca.</h3>
+
+                    <a href="/1" class="work__button">
+                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
                 </div>
 
-                <div class="home__social">
-                    
-                    <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="home__social-link">
-                        <i class='bx bxl-instagram'></i>
+                <div class="work__card mix recientes">
+                    <img src="https://i.postimg.cc/PJv9Q3D3/principal-2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Del mercado popular a la cocina <br>  gourmet: Cocinando con un chef</h3>
+
+                    <a href="/2" class="work__button">
+                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
-                    
+                </div>
+
+                <div class="work__card mix recientes">
+                    <img src="https://i.postimg.cc/Dz2c1y19/3-2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Tour de Arte</h3>
+
+                    <a href="/3" class="work__button">
+                        Leer Más <i class='bx bx-right-arrow-alt work__icon'></i>
+                    </a>
                 </div>
             </div>
         </section>
-
-        <!--=============== BLOG CONTENT ===============-->
-        <section class="section">
-            <p class="blog__content">
-                Chichén Itzá (del maya yucateco: Chiꞌ Chꞌeꞌen Its Jaꞌ ‘Boca del pozo de los brujos del agua’)1​ es uno de los principales sitios arqueológicos mayas de la península de Yucatán, en México. Se encuentra a escasos 2.5 km de la localidad de Pisté, en el municipio de Tinum, en el estado de Yucatán, al sureste del país. Consistió en una ciudad o un centro ceremonial que pasó por diversas épocas constructivas e influencias de los distintos pueblos que la ocuparon y que la impulsaron desde su fundación.2​ Vestigio importante y renombrado de la civilización maya, las construcciones principales que ahí perduran corresponden al periodo denominado clásico tardío o posclásico temprano (800-1100 d. C.) dentro del período Posclásico mesoamericano.
-
-                Fue inscrita en mi casaPatrimonio de la Humanidad por la Unesco en 1988.3​ El 7 de julio de 2007, el Templo de Kukulcán, ubicado en Chichén Itzá, fue reconocido como una de las nuevas siete maravillas del mundo moderno, por una iniciativa privada sin el apoyo de la Unesco, pero con el reconocimiento de millones de votantes alrededor del mundo.4​ La arquitectura monumental que ha llegado hasta nuestros días, que es emblemática del yacimiento, tiene una clara influencia tolteca. El dios que preside el sitio, según la mitología maya, es Kukulcán, representación maya de Quetzalcóatl, dios tomado del panteón de la cultura tolteca.
-            </p>
-        </section>
+        <br><br><br>
         
     </main>
+    
     <!--=============== FOOTER ===============-->
     <footer class="footer">
         <div class="footer__container container">
-            <h1 class="footer__title">Art Traces</h1>
 
-            <ul class="footer__list">
-                <li>
-                    <a href="/" class="footer__link">Volver a Inicio</a>
-                </li>
-            </ul>
+            <div class="footer__logo">
+                <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                <h1 class="footer__title">Art Traces</h1>
+            </div>
 
             <ul class="footer__social">
                 
 
-                <a href="https://instagram.com/arttracestravel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="footer__social-link">
+                <a href="https://www.instagram.com/arttracestravel/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" class="footer__social-link">
                     <i class='bx bxl-instagram'></i>
                 </a>
-
-                
             </ul>
 
             <span class="footer__copy">
@@ -135,7 +149,16 @@
         </div>
     </footer>
 
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="{{url_for('assets', path='/js/scrollreveal.min.js'}}"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="{{url_for('assets', path='/js/swiper-bundle.min.js'}}"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="{{url_for('assets', path='/js/mixitup.min.js'}}"></script>
+
     <!--=============== MAIN JS ===============-->
-    <script src="{{url_for('assets', path='/js/main.js')}}"></script>
+    <script src="{{url_for('assets', path='/js/main.js'}}"></script>
 </body>
 </html>
