@@ -54,6 +54,12 @@
                         </li>
 
                         <li class="nav__item">
+                            <a href="/blog" class="nav__link">
+                                BLOG
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
                             <a href="/contacto" class="nav__link active-link">
                                 TRIP REQUEST
                             </a>
@@ -108,6 +114,27 @@
                                     Escíbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                                 </a>
                             </div>
+                            <div class="contact__card">
+                                <i class='bx bx-map contact__card-icon'></i>
+                                <h3 class="contact__card-title">Dirección</h3>
+                                <br>
+                                <span class="contact__card-data">
+                                    Calle 66 #586 
+                                    Col. Centro. Mérida, Yucatán, México. 
+                                    C.P. 97000
+                                </span>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bx-phone-call contact__card-icon'></i>
+                                
+                                <h3 class="contact__card-title">Teléfono</h3>
+                                <span class="contact__card-data">9994409383</span>
+
+                                <a href="tel:9994409383" target="blank" class="contact_button">
+                                    Llámame <i class='bx bx-right-arrow-alt '></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -117,42 +144,42 @@
                         <form action="/sendform" class="contact__form" method="POST">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Nombre completo</label>
-                                <input name="name" id="name" type="text"  placeholder="Inserte su nombre y apellidos" class="contact__form-input" required>
+                                <input name="name" id="name" type="text"  class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Edad</label>
-                                <input name="age" id="age" type="number" placeholder="Edad de la persona que reserva" class="contact__form-input" required>
+                                <input name="age" id="age" type="number" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Email</label>
-                                <input name="email" id="email" type="email" placeholder="Inserte su Email" class="contact__form-input" required>
+                                <input name="email" id="email" type="email" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Total de personas</label>
-                                <input name="person_number" id="person_number" type="number"placeholder="Numero total de personas" class="contact__form-input" required>
+                                <input name="person_number" id="person_number" type="number" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Total de adultos</label>
-                                <input name="adult_number" id="adult_number" type="number" placeholder="Numero total de personas adultas" class="contact__form-input" required>
+                                <input name="adult_number" id="adult_number" type="number" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Total de niños</label>
-                                <input name="children_number" id="children_number" type="number" placeholder="Numero total de personas menores" class="contact__form-input" required>
+                                <input name="children_number" id="children_number" type="number" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Destinos</label>
-                                <input name="destiny" id="destiny" type="text" placeholder="Incluir Ciudad o lugar según sea el caso" class="contact__form-input" required>
+                                <input name="destiny" id="destiny" type="text" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Días de duración del viaje</label>
-                                <input name="duration" id="duration" type="number" placeholder="Ejemplo: 3, 5, 7 o 9 días" value=""  class="contact__form-input" required>
+                                <input name="duration" id="duration" type="number" value=""  class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
@@ -167,7 +194,7 @@
 
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Intereses</label>
-                                <textarea name="experiences" id="experiences" mencols="30" rows="10" placeholder="Entre las experiencias que ofrecemos seleccione las que son de su interés" class="contact__form-input" required></textarea>
+                                <textarea name="experiences" id="experiences" mencols="30" rows="10" class="contact__form-input" required></textarea>
                             </div>
 
                             

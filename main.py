@@ -199,6 +199,14 @@ async def root(request: Request):
 async def root(request: Request):
     return templates.TemplateResponse("blogenglish.html", {"request": request})
 
+@app.get("/indexgaleriacuba", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("indexgaleriacuba.html", {"request": request})
+
+@app.get("/indexgaleriamexico", tags=["inicio"])
+async def root(request: Request):
+    return templates.TemplateResponse("indexgaleriamexico.html", {"request": request})
+
 @app.get("/blogs/{id_blog}", tags=["blogs"])
 async def root(request: Request, id_blog:str):
 

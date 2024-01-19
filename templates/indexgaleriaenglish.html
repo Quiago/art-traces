@@ -1,68 +1,168 @@
 <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explora la fusión única de turismo y arte en La Habana y Mérida con Art Traces, tu guía para descubrir las vibrantes escenas culturales de estas ciudades." />
+        <meta name="keywords" content="Turismo, Arte, Experiencias">
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Art Traces | Gallery</title>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="{{url_for('assets', path='/img/Logo_fondo_negro_marco_circular')}}" type="image/x-icon">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="{{url_for('assets', path='/img/Logo_fondo_negro_marco_circular-transformed.svg')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{url_for('assets', path='/css/style.css')}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css')}}">
-    <script src="script.js')}}" defer></script>
-  </head>
-  <body>
-    <h1>Gallery</h1>
-    <div class="lightbox">
-      <div class="wrapper">
-        <header>
-          <div class="details">
-            <i class="uil uil-camera"></i>
-            <span>Art-Traces</span>
-          </div>
-          <div class="buttons"><i class="close-icon uil uil-times"></i></div>
-        </header>
-        <div class="preview-img">
-          <div class="img"><img src="" alt="preview-img"></div>
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/swiper-bundle.min.css')}}">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="{{url_for('assets', path='/css/styles.css')}}">
+
+        <title> Art Traces | Blog </title>
+    </head>
+    <body>
+
+        <div itemscope itemtype="https://schema.org/WebSite">
+            <meta itemprop="url" content="https://arttraces.net/"/>
+            <meta itemprop="name" content="Art Traces"/>
         </div>
-      </div>
-    </div>
-    <section class="gallery">
-      <ul class="images">
-        <li class="img"><img src="https://i.postimg.cc/h4yjxjCT/shutterstock_312697145.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/d0X0x0gf/1.png" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/8Py6NTv1/3.png" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/25N3sLBM/fernando-gago-IuYL3sEqAOk-unsplash.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/nhvdjJmw/pexels-audiovisual-17230697.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/8kZPKK5c/jorge-bermudez-VMx3eKxaIvM-unsplash.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/BvnpNFFF/matt-hanns-schroeter-rwYdurKPJf0-unsplash.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/kgnRPZ6X/pexels-matthias-oben-3687869.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/B61BPyCf/pexels-mehmet-turgut-kirkgoz-18747883.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/T2tbwfdp/Imagen_de_WhatsApp_2023-11-22_a_las_20.22.43_3db04d9a.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/pXJKgDFw/pexels-matteo-milan-15370400.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/8PM1ZHqS/pexels-alex-azabache-3182452.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/xjsSFFRw/Imagen_de_WhatsApp_2023-11-23_a_las_11.33.46_330bb6af.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/nLbn8wQ2/15.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/SKMjCMcT/16.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/ZRjmdbss/19.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/RCjsT5rg/2.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/BbWT238D/3.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/k5j3xk9s/pexels-viviana-ceballos-3546605.jpg" alt="img"></li>
-        <li class="img"><img src="https://i.postimg.cc/B61BPyCf/pexels-mehmet-turgut-kirkgoz-18747883.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/kgnRPZ6X/pexels-matthias-oben-3687869.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/tCcX5PBX/pexels-ryutaro-tsukata-5472269.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/jSnzfyFj/kelsey-todd-DXKb-OIWGZSA-unsplash.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/PxwcFLJf/louis-hansel-h1-Uur-Xw0-Yck-unsplash.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/Y2QZ6mTb/mgg-vitchakorn-LFZYt-Kdk-Ex-U-unsplash.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/htNknFwt/pexels-cottonbro-studio-9419224.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/tJ510N49/pexels-inga-seliverstova-3394225.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/Gh2Vshnp/pexels-isabella-mendes-1304475.jpg" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/d0X0x0gf/1.png" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/prj5ZjTk/2.png" alt="img" /></li>
-        <li class="img"><img src="https://i.postimg.cc/8Py6NTv1/3.png" alt="img" /></li>
-      </ul>
-    </section>
 
-  </body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+          <nav class="nav container">
+              <div class="nav__logo">
+                  <img src="https://i.postimg.cc/t4jPP0Ky/Imagen1.png" alt="" srcset="">
+                  <div class="nav__logo_text">ART - TRACES</div>
+              </div>
+      
+              <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                      <li class="nav__item">
+                          <a href="/main" class="nav__link">
+                              HOME
+                          </a>
+                      </li>
+      
+                      <li class="nav__item">
+                          <a href="/destinocubaenglish" class="nav__link">
+                              DESTINATION CUBA
+                          </a>
+                      </li>
+      
+                      <li class="nav__item">
+                          <a href="/destinomexicoenglish" class="nav__link">
+                              DESTINATION YUCATÁN
+                          </a>
+                      </li>
+      
+                      <li class="nav__item">
+                          <a href="/indexgaleriaenglish" class="nav__link active-link">
+                              GALLERY
+                          </a>
+                      </li>
+      
+                      <li class="nav__item">
+                          <a href="/blogenglish" class="nav__link">
+                              BLOG
+                          </a>
+                      </li>
+      
+                      <li class="nav__item">
+                          <a href="/contactoenglish" class="nav__link">
+                              TRIP REQUEST
+                          </a>
+                      </li>
+                  </ul>
+                  <br><br><br><br>
+                  <a href="/indexgaleria" class="button">
+                      Spanish
+                  </a>
+      
+                  <i class="bx bx-x nav__close" id="nav-close"></i>
+              </div>
+      
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class='bx bx-menu'></i>
+              </div>
+          </nav>
+      </header>
+      
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+          <!--=============== DESTINOS ===============-->
+          <section class="skills section" id="skills">
+                <span class="section__subtitle">Enjoy the photos in our</span>
+                <h2 class="section__title">Gallery</h2>
+
+                <div class="destino__container container grid">
+                    <div class="destino__card">
+                        <img src="https://i.postimg.cc/h4yjxjCT/shutterstock_312697145.jpg" alt="" class="destino__img">
+
+                        <h3 class="destino__title">Cuba</h3>
+
+                        <a href="/indexgaleriacuba" class="destino__button">
+                            Explore <i class='bx bx-right-arrow-alt destino__icon'></i>
+                        </a>
+                    </div>
+
+                    <div class="destino__card">
+                        <img src="https://i.postimg.cc/3JKf0kLj/shutterstock-1729446625.jpg" alt="" class="destino__img">
+
+                        <h3 class="destino__title">Yucatán</h3>
+
+                        <a href="/indexgaleriamexico" class="destino__button">
+                            Explore <i class='bx bx-right-arrow-alt destino__icon'></i>
+                        </a>
+                    </div>
+
+                </div>
+            
+                
+          </section>
+        </main>
+
+        <br><br><br>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+
+                <div class="footer__logo">
+                    <img src="https://i.postimg.cc/rm5L19Sj/Art-17-removebg-preview.png" alt="" srcset="">
+                    <h1 class="footer__title">Art Traces</h1>
+                </div>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Art Traces. Todos los derechos reservados
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="{{url_for('assets', path='/js/scrollreveal.min.js')}}"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="{{url_for('assets', path='/js/swiper-bundle.min.js')}}"></script>
+        
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="{{url_for('assets', path='/js/mixitup.min.js')}}"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="{{url_for('assets', path='/js/main.js')}}"></script>
+    </body>
 </html>
