@@ -1,32 +1,4 @@
 
-/*=============== SLIDER ===============*/
-const images = [
-    'https://i.postimg.cc/L6PZm5TR/shutterstock_1415884631.jpg',
-    'https://i.postimg.cc/3JKf0kLj/shutterstock_1729446625.jpg',
-    'https://i.postimg.cc/R0nvrJ9x/shutterstock_2364429931.jpg',
-    'https://i.postimg.cc/h4yjxjCT/shutterstock_312697145.jpg',
-    'https://i.postimg.cc/FzBBvqjW/shutterstock_1993982009.jpg',
-    'https://i.postimg.cc/SskHBm5F/dorian-d1-KG9JL_DL-og-unsplash.jpg'
-  ];
-  
-  let currentImageIndex = 0;
-  
-  function changeBackgroundImage() {
-    const homeImg = document.querySelector('.home__img');
-    const nextImageIndex = (currentImageIndex + 1) % images.length;
-  
-    homeImg.src = images[nextImageIndex];
-    homeImg.style.opacity = 0;
-  
-    setTimeout(() => {
-      homeImg.style.opacity = 1;
-    }, 10);
-  
-    currentImageIndex = nextImageIndex;
-  }
-  
-  setInterval(changeBackgroundImage, 3000);
-
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -183,8 +155,7 @@ let swiperCards = new Swiper(".gallery-cards", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-});
+  });
   
-swiperThumbs.controller.control = swiperCards;
-
+  swiperThumbs.controller.control = swiperCards;
 
